@@ -27,7 +27,7 @@
                             <i class="mdi mdi-menu"></i>
                         </button>
                         <a href="#" class="header-log-container">
-                            <img class="header-logo" src="assets/img/logo.png" alt="">
+                            <img class="header-logo" src="<?php echo myRoot ?>/assets/img/logo.png" alt="">
                         </a>
                         <button class="header-faq">
                             <i class="mdi mdi-help"></i>
@@ -78,9 +78,36 @@
                 <i class="mdi mdi-close"></i>
             </button>
             <div class="menu-logo">
-                <img src="assets/img/logo.png" alt="">
+                <img src="<?php echo myRoot ?>assets/img/logo.png" alt="">
             </div>
-            <ul class="main-menu">
+            <?php if( has_nav_menu('MainMenu')) : ?>
+            <?php
+                    $config = array(
+                        'menu'            => '',
+                        'container'       => 'ul',
+                        'container_class' => '',
+                        'container_id'    => '',
+                        'menu_class'      => 'main-menu',
+                        'menu_id'         => '',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'before'          => '',
+                        'after'           => '',
+                        'link_before'     => '',
+                        'link_after'      => '',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'item_spacing'    => 'preserve',
+                        'depth'           => 0,
+                        'walker'          => '',
+                        'theme_location'  => '',
+                    );
+            
+                 wp_nav_menu($config); ?>
+        <?php else : ?>
+            <div>definde a menu for this place in wp admin pannel</div>
+        <?php endif; ?>
+
+            <!-- <ul class="main-menu">
                 <li class="sub-menu-parent">
                     <a href="#">دسته محصولات</a>
                     <ul class="sub-menu">
@@ -705,7 +732,7 @@
                     <a href="#">درباره ما</a>
                 </li>
            
-            </ul>
+            </ul> -->
         </div>
     </nav>
     <?php wp_head() ?>

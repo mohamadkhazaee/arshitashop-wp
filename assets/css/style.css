@@ -351,7 +351,7 @@ input[type=number] {
                 display: flex; }
               #main-nav .main-menu > li > ul > li:hover > a {
                 color: #fff !important;
-                padding-right: 12px; }
+                padding-right: 10px; }
                 #main-nav .main-menu > li > ul > li:hover > a .mega-menu-icon {
                   color: #fff; }
             #main-nav .main-menu > li > ul > li > a {
@@ -359,6 +359,7 @@ input[type=number] {
               width: 100%;
               color: #555 !important;
               display: block;
+              padding-right: 0px;
               display: flex;
               justify-content: flex-start;
               align-items: center;
@@ -409,7 +410,8 @@ input[type=number] {
                   font-size: 13px;
                   position: relative;
                   transition: all ease-in-out .3s;
-                  margin-bottom: 5px; }
+                  margin-bottom: 8px;
+                  display: inline-block; }
                   #main-nav .main-menu > li > ul > li > ul > li > a:hover {
                     color: #f64b3c; }
                   #main-nav .main-menu > li > ul > li > ul > li > a:hover::after {
@@ -425,10 +427,10 @@ input[type=number] {
                       transition: all ease-in-out .3s; }
                       #main-nav .main-menu > li > ul > li > ul > li > ul > li > a:hover {
                         color: #f64b3c; }
-      #main-nav .main-menu > .sub-menu-parent > a {
+      #main-nav .main-menu > .menu-item-has-children > a {
         padding-right: 30px;
         border-left: 1px solid #e5e5ea; }
-        #main-nav .main-menu > .sub-menu-parent > a::after {
+        #main-nav .main-menu > .menu-item-has-children > a::after {
           position: absolute;
           content: '\F035C';
           right: 0;
@@ -1779,6 +1781,104 @@ footer {
         transition: all ease-in-out .3s; }
         footer .footer-ul ul li a:hover {
           color: #f64b3c; }
+
+.mdi-digital > a::before {
+  font-family: 'Material Icons';
+  content: '\F0324' !important;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-house > a::before {
+  font-family: 'Material Icons';
+  content: '\F02DC' !important;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-ball > a::before {
+  font-family: 'Material Icons';
+  content: '\F04B8' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-wrench > a::before {
+  font-family: 'Material Icons';
+  content: '\F0BE0' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-fire > a::before {
+  font-family: 'Material Icons';
+  content: '\F0EDD' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-chair > a::before {
+  font-family: 'Material Icons';
+  content: '\F0F48' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-shirt > a::before {
+  font-family: 'Material Icons';
+  content: '\F053F' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-book > a::before {
+  font-family: 'Material Icons';
+  content: '\F0B63' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-carriage > a::before {
+  font-family: 'Material Icons';
+  content: '\F068F' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
+
+.mdi-cat > a::before {
+  font-family: 'Material Icons';
+  content: '\F011B' !important;
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px; }
 
 @media screen and (max-width: 991px) {
   .responsive-overlay {
