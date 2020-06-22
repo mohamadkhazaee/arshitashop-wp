@@ -1,35 +1,10 @@
 <?php get_header( ) ?>
 
 <main>
-    
             <section class="container-fluid" id="slider-section">
                 <div class="row">
                     <div class="col-md-8">
-                        <div class="owl-container">
-                            <div class="owl-main-slider owl-carousel owl-theme">
-                                <div class="item">
-                                    <a href="#">
-                                        <img src="assets/img/slide.png" alt="">
-                                    </a>
-                                   </div>
-
-                               <div class="item">
-                                <a href="#">
-                                    <img src="assets/img/slide2.jpg" alt="">
-                                </a>
-                               </div>
-                               <div class="item">
-                                <a href="#">
-                                    <img src="assets/img/slide3.jpg" alt="">
-                                </a>
-                               </div>
-                               <div class="item">
-                                <a href="#">
-                                    <img src="assets/img/slide4.jpg" alt="">
-                                </a>
-                               </div>
-                            </div>
-                        </div>
+                       <?php get_template_part('partials/main-slider') ?>
                     </div>
                     <div class="col-md-4">
                         <div class="slider-ad">

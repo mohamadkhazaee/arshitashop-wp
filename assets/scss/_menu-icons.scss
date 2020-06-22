@@ -1,3 +1,56 @@
+
+  .mdi-books{
+    >a{
+      &::before{
+        font-family: 'Material Icons';
+        content: '\F0B63' !important;
+        margin-top : 8px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
+      }
+    }
+  }
+  .mdi-child{
+    >a{
+      &::before{
+        font-family: 'Material Icons';
+        content: '\F068F' !important;
+        margin-top : 8px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
+      }
+    }
+  }
+.mdi-pet{
+    >a{
+      &::before{
+        font-family: 'Material Icons';
+        content: '\F011B' !important;
+        margin-top : 8px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
+      }
+    }
+  }
+
 .mdi-digital{
     >a{
       &::before{
@@ -8,6 +61,10 @@
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
@@ -21,6 +78,10 @@
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
@@ -29,26 +90,32 @@
       &::before{
         font-family: 'Material Icons';
         content: '\F04B8' !important;
-        position: absolute;
         margin-top : 8px;
         right: 10px;
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
-  .mdi-wrench{
+  .mdi-workTools{
     >a{
       &::before{
         font-family: 'Material Icons';
         content: '\F0BE0' !important;
-        position: absolute;
         margin-top : 8px;
         right: 10px;
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
@@ -57,12 +124,15 @@
       &::before{
         font-family: 'Material Icons';
         content: '\F0EDD' !important;
-        position: absolute;
         margin-top : 8px;
         right: 10px;
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
@@ -71,12 +141,15 @@
       &::before{
         font-family: 'Material Icons';
         content: '\F0F48' !important;
-        position: absolute;
         margin-top : 8px;
         right: 10px;
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
@@ -85,55 +158,16 @@
       &::before{
         font-family: 'Material Icons';
         content: '\F053F' !important;
-        position: absolute;
         margin-top : 8px;
         right: 10px;
         width: 40px;
         height: 40px;
         font-size: 20px;
+        color: $pred;
+      }
+      &:hover::before{
+        color: #fff !important;
       }
     }
   }
   
-  .mdi-book{
-    >a{
-      &::before{
-        font-family: 'Material Icons';
-        content: '\F0B63' !important;
-        position: absolute;
-        margin-top : 8px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-      }
-    }
-  }
-  .mdi-carriage{
-    >a{
-      &::before{
-        font-family: 'Material Icons';
-        content: '\F068F' !important;
-        position: absolute;
-        margin-top : 8px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-      }
-    }
-  }
-  .mdi-cat{
-    >a{
-      &::before{
-        font-family: 'Material Icons';
-        content: '\F011B' !important;
-        position: absolute;
-        margin-top : 8px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-      }
-    }
-  }

@@ -1782,6 +1782,45 @@ footer {
         footer .footer-ul ul li a:hover {
           color: #f64b3c; }
 
+.mdi-books > a::before {
+  font-family: 'Material Icons';
+  content: '\F0B63' !important;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-books > a:hover::before {
+  color: #fff !important; }
+
+.mdi-child > a::before {
+  font-family: 'Material Icons';
+  content: '\F068F' !important;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-child > a:hover::before {
+  color: #fff !important; }
+
+.mdi-pet > a::before {
+  font-family: 'Material Icons';
+  content: '\F011B' !important;
+  margin-top: 8px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-pet > a:hover::before {
+  color: #fff !important; }
+
 .mdi-digital > a::before {
   font-family: 'Material Icons';
   content: '\F0324' !important;
@@ -1789,7 +1828,11 @@ footer {
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-digital > a:hover::before {
+  color: #fff !important; }
 
 .mdi-house > a::before {
   font-family: 'Material Icons';
@@ -1798,87 +1841,76 @@ footer {
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-house > a:hover::before {
+  color: #fff !important; }
 
 .mdi-ball > a::before {
   font-family: 'Material Icons';
   content: '\F04B8' !important;
-  position: absolute;
   margin-top: 8px;
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
 
-.mdi-wrench > a::before {
+.mdi-ball > a:hover::before {
+  color: #fff !important; }
+
+.mdi-workTools > a::before {
   font-family: 'Material Icons';
   content: '\F0BE0' !important;
-  position: absolute;
   margin-top: 8px;
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-workTools > a:hover::before {
+  color: #fff !important; }
 
 .mdi-fire > a::before {
   font-family: 'Material Icons';
   content: '\F0EDD' !important;
-  position: absolute;
   margin-top: 8px;
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-fire > a:hover::before {
+  color: #fff !important; }
 
 .mdi-chair > a::before {
   font-family: 'Material Icons';
   content: '\F0F48' !important;
-  position: absolute;
   margin-top: 8px;
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
+
+.mdi-chair > a:hover::before {
+  color: #fff !important; }
 
 .mdi-shirt > a::before {
   font-family: 'Material Icons';
   content: '\F053F' !important;
-  position: absolute;
   margin-top: 8px;
   right: 10px;
   width: 40px;
   height: 40px;
-  font-size: 20px; }
+  font-size: 20px;
+  color: #f64b3c; }
 
-.mdi-book > a::before {
-  font-family: 'Material Icons';
-  content: '\F0B63' !important;
-  position: absolute;
-  margin-top: 8px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  font-size: 20px; }
-
-.mdi-carriage > a::before {
-  font-family: 'Material Icons';
-  content: '\F068F' !important;
-  position: absolute;
-  margin-top: 8px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  font-size: 20px; }
-
-.mdi-cat > a::before {
-  font-family: 'Material Icons';
-  content: '\F011B' !important;
-  position: absolute;
-  margin-top: 8px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  font-size: 20px; }
+.mdi-shirt > a:hover::before {
+  color: #fff !important; }
 
 @media screen and (max-width: 991px) {
   .responsive-overlay {
