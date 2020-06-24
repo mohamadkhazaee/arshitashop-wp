@@ -9,10 +9,10 @@
                     <div class="col-md-4">
                         <div class="slider-ad">
                             <a href="#">
-                                <img src="assets/img/slider-ad.png" alt="">
+                                <img src="<?php echo myRoot ?>/assets/img/slider-ad.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="assets/img/slider-ad-1.png" alt="">
+                                <img src="<?php echo myRoot ?>/assets/img/slider-ad-1.png" alt="">
                             </a>
                            
                         </div>
@@ -4278,216 +4278,54 @@
                                 </div>
                                 <div class="owl-container">
                                    <div class="owl-loop-slider-brands owl-carousel owl-theme">
-                                       <div class="item">
-                                           <a href="#">
+                                   <?php
+                                        $args = array(
+                                            'post_type' => 'post' 
+                                        );
+                                            // The Query
+                                            $blog_index_query = new WP_Query( $args );
+                                            
+                                            // The Loop
+                                            if ( $blog_index_query->have_posts() ) {
+                                                while ( $blog_index_query->have_posts() ) {
+                                                    $blog_index_query->the_post(); ?>
+                                                    
+                                                    <div class="item">
+                                                      <a href="<?php the_permalink(); ?>">
                                                <div class="blog-item">
-                                                <img src="assets/img/blog.jpg" alt="">
+                                                <?php echo get_the_post_thumbnail(); ?> 
                                                 <div class="item-body">
                                                     <h2 class="item-title">
-                                                            چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
+                                                           <?php the_title(); ?>
                                                     </h2>
                                                     <div class="item-details">
                                                         <span class="item-author">
                                                             <i class="mdi mdi-account-edit"></i>
-                                                            <span href="#">
-                                                                سجاد رمضانی
+                                                            <span href="<?php the_author_url() ?>">
+                                                            <?php the_author(); ?>
                                                             </span>
                                                         </span>
                                                         <div class="item-date">
                                                             <i class="mdi mdi-clock-outline"></i>
                                                             <span>
-                                                                12/11/98
+                                                            <?php echo get_the_date('Y-m-d') ?>
                                                             </span>
                                                         </div>
                                                     </div>
                                                 </div>
                                                </div>
-                                           </a>
-                                       </div>
+                                                 </a>
+                                                     </div>
                                       
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog2.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog3.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog4.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog5.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog6.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog7.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <div class="blog-item">
-                                             <img src="assets/img/blog8.jpg" alt="">
-                                             <div class="item-body">
-                                                 <h2 class="item-title">
-                                                         چگونه فایل های حذف شده از موبایل یا تبلت را بازیابی کنیم
-                                                 </h2>
-                                                 <div class="item-details">
-                                                     <a class="item-author">
-                                                         <i class="mdi mdi-account-edit"></i>
-                                                         <span href="#">
-                                                             سجاد رمضانی
-                                                         </span>
-                                                     </a>
-                                                     <div class="item-date">
-                                                         <i class="mdi mdi-clock-outline"></i>
-                                                         <span>
-                                                             12/11/98
-                                                         </span>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                                  
+                                                  
+                                                    <?php    
+                                                }
+                                            }   ?>
+                                          <?php  wp_reset_postdata();
+                                            ?>
                                     
+                             
                                    </div>
                                 </div>
                             </div>

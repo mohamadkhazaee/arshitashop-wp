@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo myRoot ?>/assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="<?php echo myRoot ?>/https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css
     ">
+    
     <title>آرشیتا کالا</title>
 </head>
 <body>
