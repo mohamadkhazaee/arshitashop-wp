@@ -19,6 +19,7 @@
 </head>
 <body>
     <div class="responsive-overlay"></div>
+   
     <header class="main-header" >
         <div class="container-fluid" >
             <div class="row">
@@ -736,4 +737,5 @@
             </ul> -->
         </div>
     </nav>
+    <?php echo wp_list_categories() ?>
     <?php wp_head() ?>

@@ -18,23 +18,47 @@
                         </div>
                     </div>
                 </div>
+                <?php 
+$descendant= array('child_of'=>54);
+$categories = get_categories($descendant);
+foreach($categories as $category) :
+    echo $category->name;
+endforeach;
+?>
+
+                            
             </section>
             <section class="loop-slider-type-1 bg-1">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
                             <div class="loop-slider-tabs">
+                         <?php
+                                        $categories = get_categories( array(
+                                            'parent'=>$cat->'3'
+                                        ) );
+
+                                        $subcategories = array();
+
+                                        foreach ( $categories as $category ) {
+                                            $subcategories[] = $category;
+                                        }
+                                    ?>
+
+                                    <?php  print_r($subcategories) ;              
+ ?>
                                 <h3 class="loop-slider-title">
-                                 گوشی موبایل
+                              <?php echo get_cat_name(3) ?>
                                 </h3>
                                 <div>
                                     <div class="row">
                                         <div class="col-6">
                                             <ul class="slider-loop-menu nav nav-tabs" id="loop-slider-type-1-1" role="tablist">
+                                             
                                                 <li >
                                                     <a class="active" data-toggle="tab" href="#mobile" role="tab">موبایل</a>
                                                 </li>
-                                                <li>
+                                                <!-- <li>
                                                     <a  data-toggle="tab" href="#tv" role="tab">سامسونگ</a>
                                                 </li>
                                                 <li>
@@ -48,7 +72,7 @@
                                                 </li>
                                                 <li>
                                                     <a  data-toggle="tab" href="#device" role="tab">آنر</a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
                                         <div class="col-6">

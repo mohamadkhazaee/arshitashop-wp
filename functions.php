@@ -10,9 +10,14 @@
                 //menus//////
      function myThemeSetup(){
     		  //in here we write code we want to execute when thme is being loaded
-    		   register_nav_menu('MainMenu' , 'منوی اصلی');
+			   register_nav_menu('MainMenu' , 'منوی اصلی');
+			   add_theme_support( 'woocommerce' );
+
+			   add_theme_support( 'post-thumbnails' );
+				add_image_size( 'slider-thumbnails', 850 , 350 , true );
+
 				}
-	function slider_post_type() {
+				function slider_post_type() {
 
 					register_post_type('slider_post_type',
 						array(
@@ -36,8 +41,6 @@
 				
 				add_action('init', 'slider_post_type');
 add_action('after_setup_theme' , 'myThemeSetup');
-add_theme_support( 'post-thumbnails' );
-	add_image_size( 'slider-thumbnails', 850 , 350 , true );
 
 
 
@@ -68,3 +71,17 @@ require_once dirname( __FILE__ ) . '/cmb2-options.php';
 
 
 
+function arshitashop_widget_setup(){
+	register_sidebar( array(
+        /* translators: %d: Sidebar number. */
+        'name'          => 'سایدبار 1',
+        'id'            => "sidebar-$i",
+        'description'   => 'توضیحات',
+        'class'         => '',
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => "</li>\n",
+        'before_title'  => '<h2 class="widgettitle">',
+        'after_title'   => "</h2>\n",
+    ) );
+};
+add_action('init' , 'arshitashop_widget_setup');
