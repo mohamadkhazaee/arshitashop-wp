@@ -197,9 +197,10 @@
            border-radius: $radius;
            box-shadow: $box-shadow;
            background-color: #fff;
+           margin-bottom: 15px;
            .post-header{
                width: 100%;
-               min-height: 80px;
+               min-height: 100px;
                display: flex;
                flex-direction: column;
                justify-content: flex-start;
@@ -207,7 +208,7 @@
                h1{
                    display: flex;
                    width: 100%;
-                   min-height: 60px;
+                   min-height: 80px;
                    border-bottom: 1px solid #f0f0f0;
                    font-family: 'shabnam';
                    font-size: 22px;
@@ -215,6 +216,62 @@
                    justify-content: flex-start;
                    align-items: center;
                    font-weight: bold;
+               }
+               .post-time{
+                   display: flex;
+                   flex-direction:row;
+                   justify-content: flex-start;
+                   align-items: center;
+                   width: 100%;
+                   color: #999;
+                   font-size: 11px;
+                   i{
+                       width: 30px;
+                       height: 30px;
+                       margin-left: 0px;
+                       color: #ccc;
+                       font-size: 20px;
+                   }
+               }
+           }
+           .post-content{
+               width: 100%;
+               margin-top: 15px;
+               padding: 0 10px;
+               margin-bottom: 15px;
+               border-bottom: 1px solid #f0f0f0;
+               .thumbnail{
+                   width: 100%;
+                   max-width: 750px;
+                   margin: 15px auto;
+                   display: flex;
+               }
+               p{
+                   color: #333;
+                   font-family: 'shabnam';
+                   line-height: 28px;
+               }
+           }
+           .post-footer{
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               .footer-row{
+                   width: 100%;
+                   display: flex;
+                   justify-content: flex-start;
+                   align-items: center;
+                   min-height: 50px;
+                   color: #777;
+                   a{
+                    color: #777;
+                   }
+                   i{
+                       color: $pred;
+                       width: 30px;
+                       height: 30px;
+                       font-size: 20px;
+                   }
                }
            }
        }

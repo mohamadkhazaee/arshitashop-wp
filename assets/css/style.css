@@ -2079,10 +2079,11 @@ footer {
     padding: 0 10px;
     border-radius: 10px;
     box-shadow: 0 2px 12px -5px #000;
-    background-color: #fff; }
+    background-color: #fff;
+    margin-bottom: 15px; }
     .blog-single-page .blog-page-content .post-container .post-header {
       width: 100%;
-      min-height: 80px;
+      min-height: 100px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -2090,7 +2091,7 @@ footer {
       .blog-single-page .blog-page-content .post-container .post-header h1 {
         display: flex;
         width: 100%;
-        min-height: 60px;
+        min-height: 80px;
         border-bottom: 1px solid #f0f0f0;
         font-family: 'shabnam';
         font-size: 22px;
@@ -2098,6 +2099,53 @@ footer {
         justify-content: flex-start;
         align-items: center;
         font-weight: bold; }
+      .blog-single-page .blog-page-content .post-container .post-header .post-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        color: #999;
+        font-size: 11px; }
+        .blog-single-page .blog-page-content .post-container .post-header .post-time i {
+          width: 30px;
+          height: 30px;
+          margin-left: 0px;
+          color: #ccc;
+          font-size: 20px; }
+    .blog-single-page .blog-page-content .post-container .post-content {
+      width: 100%;
+      margin-top: 15px;
+      padding: 0 10px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #f0f0f0; }
+      .blog-single-page .blog-page-content .post-container .post-content .thumbnail {
+        width: 100%;
+        max-width: 750px;
+        margin: 15px auto;
+        display: flex; }
+      .blog-single-page .blog-page-content .post-container .post-content p {
+        color: #333;
+        font-family: 'shabnam';
+        line-height: 28px; }
+    .blog-single-page .blog-page-content .post-container .post-footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .blog-single-page .blog-page-content .post-container .post-footer .footer-row {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 50px;
+        color: #777; }
+        .blog-single-page .blog-page-content .post-container .post-footer .footer-row a {
+          color: #777; }
+        .blog-single-page .blog-page-content .post-container .post-footer .footer-row i {
+          color: #f64b3c;
+          width: 30px;
+          height: 30px;
+          font-size: 20px; }
 
 @media screen and (max-width: 991px) {
   .responsive-overlay {
