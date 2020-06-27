@@ -33,22 +33,22 @@ endforeach;
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
                             <div class="loop-slider-tabs">
-                         <?php
-                                        $categories = get_categories( array(
-                                            'parent'=>$cat->'3'
-                                        ) );
+                           
 
-                                        $subcategories = array();
+<ul>
+    <?php wp_list_categories( array(
+        'orderby'            => 'id',
+        'show_count'         => true,
+        'use_desc_for_title' => false,
+        'child_of'           => '' ,
+        'depth'              => 2
+    ) ); ?>
+</ul>
+ 
+                                                
 
-                                        foreach ( $categories as $category ) {
-                                            $subcategories[] = $category;
-                                        }
-                                    ?>
-
-                                    <?php  print_r($subcategories) ;              
- ?>
                                 <h3 class="loop-slider-title">
-                              <?php echo get_cat_name(3) ?>
+                              <?php echo get_cat_name(1) ?>
                                 </h3>
                                 <div>
                                     <div class="row">
@@ -4304,7 +4304,8 @@ endforeach;
                                    <div class="owl-loop-slider-brands owl-carousel owl-theme">
                                    <?php
                                         $args = array(
-                                            'post_type' => 'post' 
+                                            'post_type' => 'post' ,
+                                            'category_name' => 'blog',
                                         );
                                             // The Query
                                             $blog_index_query = new WP_Query( $args );
