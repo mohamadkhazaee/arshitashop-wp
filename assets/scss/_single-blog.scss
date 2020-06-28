@@ -193,7 +193,7 @@
        }
        .post-container{
            width: 100%;
-           padding: 0 10px;
+           padding: 0 20px;
            border-radius: $radius;
            box-shadow: $box-shadow;
            background-color: #fff;
@@ -240,11 +240,11 @@
                padding: 0 10px;
                margin-bottom: 15px;
                border-bottom: 1px solid #f0f0f0;
-               .thumbnail{
-                   width: 100%;
-                   max-width: 750px;
+               img{
+                   max-width: 100% !important;
                    margin: 15px auto;
                    display: flex;
+                   border-radius: $radius;
                }
                p{
                    color: #333;
@@ -265,6 +265,10 @@
                    color: #777;
                    a{
                     color: #777;
+                    transition: all ease-in-out .2s;
+                    &:hover{
+                        color: $pred;
+                    }
                    }
                    i{
                        color: $pred;
