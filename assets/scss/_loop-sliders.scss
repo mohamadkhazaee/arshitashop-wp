@@ -243,6 +243,22 @@
                                  transform: rotate(45deg);
                                  z-index: 100;
                              }
+                             .onsale{
+                                position: absolute;
+                                top: 10px;
+                                right: -30px;
+                                width: 100px;
+                                height: 30px;
+                                color: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: "IRsans";
+                                font-weight: bold;
+                                background-color: $pred;
+                                transform: rotate(45deg);
+                                z-index: 100;
+                            }
                         .product-top{
                             width: 100%;
                             position: relative;
@@ -271,7 +287,7 @@
                                 font-weight: bold;
                                 display: flex;
                                 justify-content: center;
-                                align-items: center;
+                                align-items: flex-start;
                                 text-align: center;
                                 flex-wrap: wrap;
                                 width: 100%;
@@ -567,6 +583,22 @@
                              transform: rotate(45deg);
                              z-index: 100;
                          }
+                         .onsale{
+                            position: absolute;
+                            top: 10px;
+                            right: -30px;
+                            width: 100px;
+                            height: 30px;
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: "IRsans";
+                            font-weight: bold;
+                            background-color: $pred;
+                            transform: rotate(45deg);
+                            z-index: 100;
+                        }
                     .product-top{
                         width: 100%;
                         position: relative;
@@ -588,14 +620,14 @@
                            align-items: center;
                            justify-content: center; 
                            padding: 20px 5px;
-                           .product-title{
+                          h2 , .product-title{
                             font-family: "shabnam";
                             color: #555;
                             font-size: 13px;
                             font-weight: bold;
                             display: flex;
                             justify-content: center;
-                            align-items: center;
+                            align-items: flex-start;
                             text-align: center;
                             flex-wrap: wrap;
                             width: 100%;
@@ -606,17 +638,18 @@
                                display: flex;
                                justify-content: center;
                                align-items: center;
-                               .before{
+                              del , .before{
                                    color: $lightc;
                                    font-size: 11px;
                                    font-family: 'IRsans';
                                    margin-left: 5px;
                                }
-                               .after{
+                              ins , .after{
                                 color: #333;
                                 margin-right: 5px;
                                 font-weight: bold;
                                 font-size: 13px;
+                                text-decoration: none !important;
                                 font-family: 'IRsans';
                             }
                            }
@@ -1023,6 +1056,38 @@
                              &:hover .product-overlay{
                                 transform: translateX(0);
                             }
+                            .product-off{
+                                position: absolute;
+                                top: 10px;
+                                right: -30px;
+                                width: 100px;
+                                height: 30px;
+                                color: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: "IRsans";
+                                font-weight: bold;
+                                background-color: $pred;
+                                transform: rotate(45deg);
+                                z-index: 100;
+                            }
+                            .product-off{
+                                position: absolute;
+                                top: 10px;
+                                right: -30px;
+                                width: 100px;
+                                height: 30px;
+                                color: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: "IRsans";
+                                font-weight: bold;
+                                background-color: $pred;
+                                transform: rotate(45deg);
+                                z-index: 100;
+                            }
                             .product-overlay{
                                 width: 40px;
                                 border-radius: $radius;
@@ -1058,7 +1123,7 @@
                                     }
                                 }
                             }
-                             .product-off{
+                            .product-off{
                                  position: absolute;
                                  top: 10px;
                                  right: -30px;
@@ -1074,12 +1139,45 @@
                                  transform: rotate(45deg);
                                  z-index: 100;
                              }
+                             .onsale {
+                                position: absolute;
+                                top: 10px;
+                                right: -30px;
+                                width: 100px;
+                                height: 30px;
+                                color: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: "IRsans";
+                                font-weight: bold;
+                                background-color: $pred;
+                                transform: rotate(45deg);
+                                z-index: 100;
+                            }
                         .product-top{
                             width: 100%;
                             position: relative;
                             padding-top: 10px;
                             overflow: hidden;
-                           
+                           >a{
+                            .onsale{
+                                position: absolute;
+                                top: 10px;
+                                right: -30px;
+                                width: 100px;
+                                height: 30px;
+                                color: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: "IRsans";
+                                font-weight: bold;
+                                background-color: $pred;
+                                transform: rotate(45deg);
+                                z-index: 100;
+                            }
+                           }
                             img{
                                 width: 100%;
                                 max-width: 200px;
@@ -1095,14 +1193,14 @@
                                align-items: center;
                                justify-content: center; 
                                padding: 20px 5px;
-                               .product-title{
+                               .product-title , h2{
                                 font-family: "shabnam";
                                 color: #555;
                                 font-size: 13px;
                                 font-weight: bold;
                                 display: flex;
                                 justify-content: center;
-                                align-items: center;
+                                align-items: flex-start;
                                 text-align: center;
                                 flex-wrap: wrap;
                                 width: 100%;
@@ -1455,7 +1553,12 @@
           .item{
               display: flex;
               justify-content: center;
-              align-items:center;
+              align-items:center; 
+              transition: all ease-in-out .3s;
+
+              &:hover{
+                  box-shadow: $box-shadow;
+              }
               .blog-item{
                 display: flex;
                 flex-direction: column;
@@ -1463,6 +1566,7 @@
                 align-items: center;
                 width: 100%;
                 padding: 15px;
+                
                 img{
                     width:200px;
                     height: 200px;

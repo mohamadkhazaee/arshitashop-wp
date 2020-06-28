@@ -1,7 +1,33 @@
 <?php get_header( ) ?>
 
 <main>
-<?php get_template_part( 'templates/index', 'slider' ); ?>
+            <section class="container-fluid" id="slider-section">
+                <div class="row">
+                    <div class="col-md-8">
+                       <?php get_template_part('partials/main-slider') ?>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="slider-ad">
+                            <a href="#">
+                                <img src="<?php echo myRoot ?>/assets/img/slider-ad.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="<?php echo myRoot ?>/assets/img/slider-ad-1.png" alt="">
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <?php 
+$descendant= array('child_of'=>54);
+$categories = get_categories($descendant);
+foreach($categories as $category) :
+    echo $category->name;
+endforeach;
+?>
+
+                            
+            </section>
             <section class="loop-slider-type-1 bg-1">
                 <div class="container-fluid">
                     <div class="row">
@@ -9,15 +35,17 @@
                             <div class="loop-slider-tabs">
                            
 
-                                <ul>
-                                    <?php wp_list_categories( array(
-                                        'orderby'            => 'id',
-                                        'show_count'         => true,
-                                        'use_desc_for_title' => false,
-                                        'child_of'           => '' ,
-                                        'depth'              => 2
-                                    ) ); ?>
-                                </ul>
+<ul>
+    <?php wp_list_categories( array(
+        'orderby'            => 'id',
+        'show_count'         => true,
+        'use_desc_for_title' => false,
+        'child_of'           => '' ,
+        'depth'              => 2
+    ) ); ?>
+</ul>
+ 
+                                                
 
                                 <h3 class="loop-slider-title">
                               <?php echo get_cat_name(1) ?>
@@ -1501,25 +1529,365 @@
                                 </div>
                                 <div class="owl-container">
                                     <div class="owl-loop-slider-type-2 owl-carousel owl-theme">
-                                    <?php
-                                $product_new_args = array(
-                                    'post_type' => 'product',
-                                    'posts_per_page' => 20,
-                                    'orderby' => 'date',
-                                    'order'   => 'DESC'
-
-                                    );
-                                $product_news_loop = new WP_Query( $product_new_args );
-                                if ( $product_news_loop->have_posts() ) {
-                                    while ( $product_news_loop->have_posts() ) : $product_news_loop->the_post();
-                                        wc_get_template_part( 'templates/content', 'product' );
-                                    endwhile;
-                                } else {
-                                    echo __( 'No products found' );
-                                }
-                                wp_reset_postdata();
-	?>
-                                        
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item6.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item1.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item2.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item1.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item3.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item4.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item6.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>  <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item6.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item5.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="product-item">
+                                                <span class="product-off">20%</span>
+                                                <div class="product-top">
+                                                    
+                                                    <img src="assets/img/product-item6.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                        <h4 class="product-title">
+                                                         گوشی موبایل نوکیا
+                                                        </h4>
+                                                       <div class="price">
+                                                            <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -3879,7 +4247,7 @@
                     </div>
                 </div>
             </section>
-            <section class="loop-slider-brands">
+            <div class="loop-slider-brands">
                 <div class="container-fluid" >
                     <div class="loop-container">
                         <div class="row">
@@ -3919,12 +4287,77 @@
                         </div>
                     </div>
                 </div>
-                    </section>
-
-                    
-                    <?php get_template_part( 'templates/index', 'blog-loop' ); ?>
-
-                
+            </div>
+            <div class="loop-slider-blog">
+                <div class="container-fluid" >
+                    <div class="loop-container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="loop-header">
+                                    <div class="loop-title">
+                                        <i class="mdi mdi-pen"></i>
+                                        <h3>اخبار و مطالب سایت</h3>
+                                    </div>
+                                    <a href="#" class="see-all">مشاهده همه</a>
+                                </div>
+                                <div class="owl-container">
+                                   <div class="owl-loop-slider-brands owl-carousel owl-theme">
+                                   <?php
+                                        $args = array(
+                                            'post_type' => 'post' ,
+                                            'category_name' => 'blog',
+                                        );
+                                            // The Query
+                                            $blog_index_query = new WP_Query( $args );
+                                            
+                                            // The Loop
+                                            if ( $blog_index_query->have_posts() ) {
+                                                while ( $blog_index_query->have_posts() ) {
+                                                    $blog_index_query->the_post(); ?>
+                                                    
+                                                    <div class="item">
+                                                      <a href="<?php the_permalink(); ?>">
+                                               <div class="blog-item">
+                                                <?php echo get_the_post_thumbnail(); ?> 
+                                                <div class="item-body">
+                                                    <h2 class="item-title">
+                                                           <?php the_title(); ?>
+                                                    </h2>
+                                                    <div class="item-details">
+                                                        <span class="item-author">
+                                                            <i class="mdi mdi-account-edit"></i>
+                                                            <span href="<?php the_author_url() ?>">
+                                                            <?php the_author(); ?>
+                                                            </span>
+                                                        </span>
+                                                        <div class="item-date">
+                                                            <i class="mdi mdi-clock-outline"></i>
+                                                            <span>
+                                                            <?php echo get_the_date('Y-m-d') ?>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               </div>
+                                                 </a>
+                                                     </div>
+                                      
+                                                  
+                                                  
+                                                    <?php    
+                                                }
+                                            }   ?>
+                                          <?php  wp_reset_postdata();
+                                            ?>
+                                    
+                             
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section id="footer-backTo-top">
                 <a id="back-top-btn" href="#main-header">
                     <i class="mdi mdi-chevron-up-circle-outline"></i>
@@ -3938,25 +4371,25 @@
                     <div class="row">
                         <div class="col-6 col-md-3">
                             <div class="service-wrapper">
-                                <img src="<?php echo myRoot ?>/assets/img/service1.svg" alt="">
+                                <img src="assets/img/service1.svg" alt="">
                                 <h4>تحویل اکسپرس</h4>
                             </div>
                         </div>
                         <div class="col-6 col-md-3">
                             <div class="service-wrapper">
-                                <img src="<?php echo myRoot ?>/assets/img/service2.svg" alt="">
+                                <img src="assets/img/service2.svg" alt="">
                                 <h4>پشتیبانی 24 ساعته</h4>
                             </div>
                         </div>
                         <div class="col-6 col-md-3">
                             <div class="service-wrapper">
-                                <img src="<?php echo myRoot ?>/assets/img/service3.svg" alt="">
+                                <img src="assets/img/service3.svg" alt="">
                                 <h4> پرداخت در محل</h4>
                             </div>
                         </div>
                         <div class="col-6 col-md-3">
                             <div class="service-wrapper">
-                                <img src="<?php echo myRoot ?>/assets/img/service4svg.svg" alt="">
+                                <img src="assets/img/service4svg.svg" alt="">
                                 <h4>ضمانت اصل بودن</h4>
                             </div>
                         </div>

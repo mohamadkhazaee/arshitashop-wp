@@ -24,44 +24,41 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( '', $product ); ?>>
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
 
-	/**
-	 * Hook: woocommerce_before_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_product_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_after_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_rating - 5
-	 * @hooked woocommerce_template_loop_price - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
-
-	/**
-	 * Hook: woocommerce_after_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_close - 5
-	 * @hooked woocommerce_template_loop_add_to_cart - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item' );
-	?>
-</li>
+<div <?php wc_product_class( 'item', $product ); ?>>
+<div class="product-item">
+												<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
+                                                <div class="product-top">
+                                                    <?php do_action( 'woocommerce_before_shop_loop_item_title' ) ?>
+                                                    <img src="assets/img/product-item6.jpg" alt="">
+                                                    <div class="product-overlay">
+                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
+                                                            <i class="mdi mdi-cart-outline"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                            <i class="mdi mdi-magnify"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
+                                                            <i class="mdi mdi-cards-heart"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                            <i class="mdi mdi-toggle-switch-outline"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a class="product-permalink" href="#">
+                                                    <div class="product-body">
+                                                  
+															<?php do_action( 'woocommerce_shop_loop_item_title' ); ?>
+                                                   
+                                                       <div class="price">
+														   <?php do_action('woocommerce_after_shop_loop_item_title') ?>
+                                                            <!-- <del class="before">26800</del>
+                                                            <span class="after">13750
+                                                                <span style="font-size:12px">تومان</span>
+                                                            </span> -->
+                                                        </div>
+                                                    </div>
+                                                </a>
+</div>
+</div>

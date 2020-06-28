@@ -21,6 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+	<div class="container-fluid breadcrumb">
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -31,6 +33,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
+	</div>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
