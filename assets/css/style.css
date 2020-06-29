@@ -837,6 +837,18 @@ input[type=number] {
                 align-items: center;
                 justify-content: center;
                 padding: 20px 5px; }
+                .loop-slider-type-1 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body > h2 {
+                  font-family: "shabnam";
+                  color: #555;
+                  font-size: 13px;
+                  font-weight: bold;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  text-align: center;
+                  flex-wrap: wrap;
+                  width: 100%;
+                  min-height: 30px; }
                 .loop-slider-type-1 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body .product-title {
                   font-family: "shabnam";
                   color: #555;
@@ -859,7 +871,12 @@ input[type=number] {
                     font-size: 11px;
                     font-family: 'IRsans';
                     margin-left: 5px; }
-                  .loop-slider-type-1 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body .price .after {
+                  .loop-slider-type-1 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body .price del {
+                    color: #76787A;
+                    font-size: 11px;
+                    font-family: 'IRsans';
+                    margin-left: 5px; }
+                  .loop-slider-type-1 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body .price ins {
                     color: #333;
                     margin-right: 5px;
                     font-weight: bold;
@@ -1091,7 +1108,31 @@ input[type=number] {
               align-items: center;
               justify-content: center;
               padding: 20px 5px; }
-              .loop-slider-type-2 .loop-container .owl-container .owl-loop-slider-type-2 .item .product-item .product-permalink .product-body h2, .loop-slider-type-2 .loop-container .owl-container .owl-loop-slider-type-2 .item .product-item .product-permalink .product-body .product-title {
+              .loop-slider-type-2 .loop-container .owl-container .owl-loop-slider-type-2 .item .product-item .product-permalink .product-body .product-title {
+                font-family: "shabnam";
+                color: #555;
+                font-size: 13px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: center;
+                flex-wrap: wrap;
+                width: 100%;
+                min-height: 30px; }
+              .loop-slider-type-2 .loop-container .owl-container .owl-loop-slider-type-2 .item .product-item .product-permalink .product-body h2 {
+                font-family: "shabnam";
+                color: #555;
+                font-size: 13px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: center;
+                flex-wrap: wrap;
+                width: 100%;
+                min-height: 30px; }
+              .loop-slider-type-2 .loop-container .owl-container .owl-loop-slider-type-2 .item .product-item .product-permalink .product-body .woocommerce-loop-product__title {
                 font-family: "shabnam";
                 color: #555;
                 font-size: 13px;
@@ -1192,6 +1233,11 @@ input[type=number] {
       margin-bottom: 10px; }
     .loop-slider-categories .loop-container .owl-container {
       width: 100%; }
+      .loop-slider-categories .loop-container .owl-container .owl-loop-slider-categories .item .loop-slider-categories-img {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+        height: 150px; }
       .loop-slider-categories .loop-container .owl-container .owl-loop-slider-categories .item a .category-item-icon {
         width: 100%;
         display: flex;
@@ -1521,6 +1567,30 @@ input[type=number] {
                   flex-wrap: wrap;
                   width: 100%;
                   min-height: 30px; }
+                .loop-slider-type3 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body h2 {
+                  font-family: "shabnam";
+                  color: #555;
+                  font-size: 13px;
+                  font-weight: bold;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  text-align: center;
+                  flex-wrap: wrap;
+                  width: 100%;
+                  min-height: 30px; }
+                .loop-slider-type3 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body .woocommerce-loop-product__title {
+                  font-family: "shabnam";
+                  color: #555;
+                  font-size: 13px;
+                  font-weight: bold;
+                  display: flex;
+                  justify-content: center;
+                  align-items: flex-start;
+                  text-align: center;
+                  flex-wrap: wrap;
+                  width: 100%;
+                  min-height: 30px; }
                 .loop-slider-type3 .tab-content .tab-pane .owl-loop-slider-type-1 .item .product-item .product-permalink .product-body .price {
                   width: 100%;
                   display: flex;
@@ -1776,6 +1846,18 @@ input[type=number] {
               font-size: 14px;
               margin-top: 10px;
               margin-bottom: 10px; }
+            .loop-slider-blog .loop-container .owl-container .owl-loop-slider-brands .item .blog-item .item-body .woocommerce-loop-product__title {
+              font-family: "shabnam";
+              color: #555;
+              font-size: 13px;
+              font-weight: bold;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              text-align: center;
+              flex-wrap: wrap;
+              width: 100%;
+              min-height: 30px; }
             .loop-slider-blog .loop-container .owl-container .owl-loop-slider-brands .item .blog-item .item-body .item-details {
               width: 100%;
               height: auto;
