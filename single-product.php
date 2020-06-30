@@ -21,7 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
-	<div class="container-fluid breadcrumb">
 
 	<?php
 		/**
@@ -32,24 +31,13 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
+	<div class="container-fluid single-product-page">
 
-	</div>
-		<?php while ( have_posts() ) : ?>
-			<?php the_post(); ?>
+	
+	<div class="row">
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-
-		<?php endwhile; // end of the loop. ?>
-
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-	?>
-
+	
+	<div class="col-12 col-lg-3">
 	<?php
 		/**
 		 * woocommerce_sidebar hook.
@@ -58,7 +46,24 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
+	</div>
 
+
+
+	<div class="col-12 col-lg-9">
+	<?php while ( have_posts() ) : ?>
+			<?php the_post(); ?>
+
+			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+
+		<?php endwhile; // end of the loop. ?>
+
+	
+	
+	</div>
+
+</div>
+</div>
 <?php
 get_footer( 'shop' );
 

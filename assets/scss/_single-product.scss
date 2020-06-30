@@ -18,3 +18,12 @@
         }
     }
  }
+ .single-product-page{
+     margin-top: 20px;
+     .product-content{
+         background-color: #fff;
+         padding: 20px;
+         border-radius: $radius;
+         box-shadow: $box-shadow;
+     }
+ }

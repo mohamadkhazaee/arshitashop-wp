@@ -2632,6 +2632,14 @@ footer {
     .woocommerce-breadcrumb > a:hover {
       color: #999; }
 
+.single-product-page {
+  margin-top: 20px; }
+  .single-product-page .product-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px -5px #000; }
+
 @media screen and (max-width: 991px) {
   .responsive-overlay {
     position: fixed;
