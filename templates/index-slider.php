@@ -17,7 +17,7 @@ $slider_loop = new WP_Query( array(
 <div class="owl-main-slider owl-carousel owl-theme">
 
 <?php while ( $slider_loop->have_posts() ) : $slider_loop->the_post(); ?>
-                              <?php  $post_meta_url = get_post_meta($post->ID , 'slider_url_metabox_field' , true) ?>
+                              <?php  $post_meta_url = get_post_meta($post->ID , 'slider_url' , true) ?>
                                 <div class="item">
                                     <a href="<?php echo $post_meta_url ?>" >
                                       <?php echo the_post_thumbnail( 'slider-thumbnails' ) ?>
@@ -32,23 +32,18 @@ $slider_loop = new WP_Query( array(
                     </div>
                     <div class="col-md-4">
                         <div class="slider-ad">
-                            <a href="#">
-                                <img src="<?php echo myRoot ?>/assets/img/slider-ad.png" alt="">
+                        <?php $arshita_slider_ads=arshita_get_option('arshita_slider_ads'); ?>
+                            <a href="<?php echo $arshita_slider_ads[0]['ad-1-link'] ?>">
+                                <img src="<?php echo $arshita_slider_ads[0]['ad-1-img'] ?>" alt="">
                             </a>
-                            <a href="#">
-                                <img src="<?php echo myRoot ?>/assets/img/slider-ad-1.png" alt="">
+                            <a href="<?php echo $arshita_slider_ads[0]['ad-2-link'] ?>">
+                                <img src="<?php echo $arshita_slider_ads[0]['ad-2-img'] ?>" alt="">
                             </a>
                            
                         </div>
                     </div>
                 </div>
-                <?php 
-$descendant= array('child_of'=>54);
-$categories = get_categories($descendant);
-foreach($categories as $category) :
-    echo $category->name;
-endforeach;
-?>
+             
 
                             
             </section>

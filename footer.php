@@ -1,6 +1,46 @@
 <footer>
         <div class="container-fluid">
             <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="footer-social-media">
+                    <?php $arshita_social_media=arshita_get_option('arshita_social_group'); ?>
+                        <h5>شبکه های اجتماعی :</h5>
+                        <div class="icons">
+                            <a href="<?php echo $arshita_social_media[0]['facebook'] ?>">
+                                <i class="mdi mdi-facebook"></i>
+                            </a>
+                            <a href="<?php echo $arshita_social_media[0]['linked_in'] ?>">
+                                <i class="mdi mdi-linkedin"></i>
+                            </a>
+                            <a href="<?php echo $arshita_social_media[0]['instagram'] ?>">
+                                <i class="mdi mdi-instagram"></i>
+                            </a>
+                            <a href="<?php echo $arshita_social_media[0]['whatsapp'] ?>">
+                                <i class="mdi mdi-whatsapp"></i>
+                            </a>
+                            <a href="<?php echo $arshita_social_media[0]['twitter'] ?>">
+                                <i class="mdi mdi-twitter"></i>
+                            </a>
+                            <a href="<?php echo $arshita_social_media[0]['telegram'] ?>">
+                                <i class="mdi mdi-telegram"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="footer-social-media">
+                        <h5>عضویت در خبرنامه سایت :</h5>
+                        <form action="">
+                            <div class="form-input">
+                                <input type="email" placeholder="ایمیل خود را وارد کنید">
+                                <button type="submit">عضویت </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-6 col-lg-3">
                     <div class="footer-ul">
                         <ul>

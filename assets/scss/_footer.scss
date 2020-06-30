@@ -1,5 +1,89 @@
 footer{
     background-color: #f0f0f0;
+    .footer-social-media{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+        h5{
+            font-family: 'shabnam';
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons{
+            max-width: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: #888;
+                    font-size: 30px;
+                    transition: all ease-in-out .3s;
+                }
+                &:hover i{
+                    color: $pred;
+                }
+            }
+        }
+        form{
+            width: 100%;
+            height: 40px;
+            max-width: 350px ;
+            .form-input{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                height: 100%;
+                padding: 0;
+                overflow: hidden;
+                border-radius: $radius;
+                box-shadow: $box-shadow;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    background-color: #fff;
+                    color: #777;
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    padding-right: 15px;
+                    border: 0 !important;
+                    appearance: none;
+                    -moz-appearance: none;
+                }
+                button{
+                    height: 100%;
+                    width: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $pred;
+                    color: #fff;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
     .footer-ul{
         margin: 20px 0;
         display: flex;

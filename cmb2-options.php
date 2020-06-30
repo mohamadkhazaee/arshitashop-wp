@@ -70,15 +70,7 @@ function arshita_register_theme_options_metabox() {
 
 
 //    logo link
-    $arshita_logo_group = $cmb->add_field( array(
-        'id'          => 'arshita_logo_group',
-        'type'        => 'group',
-        'description' =>  '',
-        'repeatable'  => false, // use false if you want non-repeatable group
-        'options' => array(
-            'group_title'=>'شبکه های اجتماعی'
-        ),
-    ) );
+  
 
     //top header
     $cmb->add_group_field( $group_field_id, array(
@@ -104,6 +96,381 @@ function arshita_register_theme_options_metabox() {
 
 
 
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    $arshita_slider_ads = $cmb->add_field( array(
+        'id'          => 'arshita_slider_ads',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options' => array(
+            'group_title'=>'تبلیعات بالای سایت کتار اسلایدر اصلی'
+        ),
+    ) );
+
+  
+    $cmb->add_group_field( $arshita_slider_ads, array(
+        'name' => 'لینک تبلیغ اول',
+        'id'   => 'ad-1-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_slider_ads, array(
+        'name' => 'آپلود تبلیغ اول',
+        'id'   => 'ad-1-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+  
+    $cmb->add_group_field( $arshita_slider_ads, array(
+        'name' => 'لینک تبلیغ دوم',
+        'id'   => 'ad-2-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_slider_ads, array(
+        'name' => 'آپلود تبلیغ دوم',
+        'id'   => 'ad-2-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    $arshita_row_1_ad = $cmb->add_field( array(
+        'id'          => 'arshita_row_1_ad',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options' => array(
+            'group_title'=>'سطر اول طبلیغات (اندازه کامل)'
+        ),
+    ) );
+
+  
+    $cmb->add_group_field( $arshita_row_1_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-1-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_1_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-1-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    $arshita_row_2_ad = $cmb->add_field( array(
+        'id'          => 'arshita_row_2_ad',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options' => array(
+            'group_title'=>'سطر دوم طبلیغات (اندازه یک چهارم )'
+        ),
+    ) );
+
+  
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-2-1-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-2-1-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+      
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-2-2-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-2-2-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+      
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-2-3-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-2-3-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+      
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-2-4-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_2_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-2-4-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    $arshita_row_3_ad = $cmb->add_field( array(
+        'id'          => 'arshita_row_3_ad',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options' => array(
+            'group_title'=>'سطر سوم طبلیغات (اندازه یک دوم )'
+        ),
+    ) );
+
+  
+    $cmb->add_group_field( $arshita_row_3_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-3-1-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_3_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-3-1-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+      
+    $cmb->add_group_field( $arshita_row_3_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-3-2-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_3_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-3-2-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+      
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+    
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+    $arshita_row_4_ad = $cmb->add_field( array(
+        'id'          => 'arshita_row_4_ad',
+        'type'        => 'group',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options' => array(
+            'group_title'=>'سطر چهارم طبلیغات (اندازه کامل  )'
+        ),
+    ) );
+
+  
+    $cmb->add_group_field( $arshita_row_4_ad, array(
+        'name' => 'لینک تبلیغ ',
+        'id'   => 'row-4-ad-link',
+        'type' => 'text_url',
+    ) );
+
+
+    //logo setting
+    $cmb->add_group_field( $arshita_row_4_ad, array(
+        'name' => 'آپلود تبلیغ ',
+        'id'   => 'row-4-ad-img',
+        'type' => 'file',
+//        hidden url
+        'options' => array(
+            'url' => false, // Hide the text input for the url
+        ),
+        'text'    => array(
+            'add_upload_file_text' => 'آپلوذ فایل' // Change upload button text. Default: "Add or Upload File"
+        ),
+    ) );
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+    $arshita_logo_group = $cmb->add_field( array(
+        'id'          => 'arshita_logo_group',
+        'type'        => 'group',
+        'description' =>  '',
+        'repeatable'  => false, // use false if you want non-repeatable group
+        'options' => array(
+            'group_title'=>'شبکه های اجتماعی'
+        ),
+    ) );
 
 //    sociale link
     $arshita_social_group = $cmb->add_field( array(
@@ -140,7 +507,11 @@ function arshita_register_theme_options_metabox() {
         'id'   => 'instagram',
         'type' => 'text_url',
     ) );
-
+    $cmb->add_group_field( $arshita_social_group, array(
+        'name' => 'واتساپ',
+        'id'   => 'whatsapp',
+        'type' => 'text_url',
+    ) );
 
 
 // //    slider_dinamic

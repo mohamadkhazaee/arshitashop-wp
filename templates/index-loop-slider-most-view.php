@@ -6,8 +6,8 @@
                             <div class="col-12">
                                 <div class="loop-header">
                                     <div class="loop-title">
-                                        <i class="mdi mdi-new-box"></i>
-                                        <h3>جدیدترین محصولات</h3>
+                                        <i class="mdi mdi-eye-outline"></i>
+                                        <h3>پر بازدیدترین ها</h3>
                                     </div>
                                 </div>
                                 <div class="owl-container">
@@ -15,6 +15,8 @@
                                     <?php
                                 $product_new_args = array(
                                     'post_type' => 'product',
+                                    'meta_key' => 'views',
+                                    'orderby'  => 'meta_value_num',
                                     'posts_per_page' => 20,
                                     'orderby' => 'date',
                                     'order'   => 'DESC'
@@ -37,4 +39,4 @@
                         </div>
                     </div>
                 </div>
-            </section>
+                            </section>

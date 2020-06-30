@@ -1,3 +1,7 @@
+
+
+
+
             <section class="loop-slider-type-1 bg-3">
                 <div class="container-fluid">
                     <div class="row">
@@ -8,7 +12,7 @@
                                 <ul>
                                     <?php 
                                     
-                                            $loop_category = get_term_by('slug' , 'fashion' , 'product_cat');
+                                            $loop_category = get_term_by('slug' , 'camp' , 'product_cat');
                                             $category_id = $loop_category->term_id;
                                             $category_name = $loop_category->name;
                                             $thumbnail_id = get_woocommerce_term_meta( $loop_category->term_id, 'thumbnail_id', true );

@@ -28,8 +28,9 @@
                         <button class="main-nav-toggle">
                             <i class="mdi mdi-menu"></i>
                         </button>
-                        <a href="#" class="header-log-container">
-                            <img class="header-logo" src="<?php echo myRoot ?>/assets/img/logo.png" alt="">
+                        <?php $logo=arshita_get_option('header_sec'); ?>
+                        <a href="<?php echo $logo[0]['logo-link'];?>" class="header-log-container">
+                            <img class="header-logo" src="<?php echo $logo[0]['logo'];?>" alt="">
                         </a>
                         <button class="header-faq">
                             <i class="mdi mdi-help"></i>

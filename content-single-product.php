@@ -26,6 +26,12 @@ global $product;
  */
 ?>
 <section class='container-fluid'>
+	<?php
+	//$post_id = get_the_id();
+$var =get_post_view($product->get_id());
+set_post_view($product->get_id());
+	var_dump($var);
+	?>
 <?php do_action( 'woocommerce_before_single_product' );
 
 if ( post_password_required() ) {
