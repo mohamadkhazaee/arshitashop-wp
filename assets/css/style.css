@@ -2985,3 +2985,27 @@ main {
       width: 120px;
       text-align: center !important;
       margin-top: 10px; }
+
+.page-404 {
+  padding: 50px 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .page-404 h1 {
+    font-weight: bold;
+    color: #000;
+    font-family: 'shabnam';
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 45px; }
+  .page-404 .svg-404 {
+    width: 280px !important; }
+
+@media screen and (max-width: 991px) {
+  .page-404 h1 {
+    font-size: 20px !important; } }
+
+@media screen and (min-width: 991px) {
+  .page-404 {
+    margin: 100px 0; } }

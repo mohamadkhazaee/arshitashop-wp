@@ -92,3 +92,36 @@ main{
         }
     }
 }
+
+.page-404{ 
+    h1{
+        font-weight: bold;
+        color: #000;
+        font-family: 'shabnam';
+        font-weight: bold;
+        margin: 20px 0;
+        font-size: 45px;
+    }
+    padding: 50px 0 ;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .svg-404{
+        width: 280px !important;
+    }
+}
+@media screen and (max-width:991px){
+    .page-404{
+        h1{
+            font-size: 20px !important;
+        }
+    }
+}
+@media screen and (min-width:991px){
+    .page-404{
+        margin: 100px 0;
+       
+    }
+}
