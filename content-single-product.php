@@ -30,7 +30,6 @@ global $product;
 	//$post_id = get_the_id();
 $var =get_post_view($product->get_id());
 set_post_view($product->get_id());
-	var_dump($var);
 	?>
 <?php do_action( 'woocommerce_before_single_product' );
 
@@ -41,7 +40,7 @@ if ( post_password_required() ) {
 ?>
 <div class="product-page-top" id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	<div class="row">
-	<div class="col-12 col-lg-6">
+	<div class="col-12 col-lg-5">
 		<div class="product-img-gallery">
 		<?php
 	/**
@@ -55,8 +54,8 @@ if ( post_password_required() ) {
 		</div>
 
 		</div>
-		<div class="col-12 col-lg-6">
-		<div class="summary entry-summary" style="background-color:red;">
+		<div class="col-12 col-lg-7">
+		<div class="summary entry-summary">
 		<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
@@ -71,13 +70,17 @@ if ( post_password_required() ) {
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
 		do_action( 'woocommerce_single_product_summary' );
+		do_action('woocommerce_product_filter_attribute');
 		?>
 	</div>
 		</div>
 		
 	</div>
 
-	<?php
+
+
+</div>
+<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
 	 *
@@ -88,8 +91,6 @@ if ( post_password_required() ) {
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
-
-</div>
 </section>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

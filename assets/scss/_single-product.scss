@@ -21,9 +21,375 @@
  .single-product-page{
      margin-top: 20px;
      .product-content{
-         background-color: #fff;
-         padding: 20px;
-         border-radius: $radius;
-         box-shadow: $box-shadow;
+        
+         .product-page-top{
+             width: 100%;
+             background-color: #fff;
+             padding: 20px;
+             border-radius: $radius;
+             box-shadow: $box-shadow;
+            
+             .summary{
+                 //background-color: red;
+                 .woocommerce-review-link{
+                     color: #666;
+                 }
+                 .product_title{
+                     color: #333;
+                     font-family: 'shabnam';
+                     font-weight: bold;
+                     font-size: 20px;
+                     margin-bottom: 20px;
+                 }
+                 .price{
+                     width: 100%;
+                     del{
+                        // text-decoration: none !important;
+                         color: #888;
+                         font-size: 11px;
+                     }
+                     ins{
+                        text-decoration: none !important;
+                        color: $pred;
+                        font-size: 25px;
+                        font-weight: bold;
+                        .woocommerce-Price-amount{
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                     }
+                 }
+                 .woocommerce-product-details__short-description{
+                     color: #666;
+                     line-height: 30px;
+                     font-family: 'shabnam';
+                 }
+                 form.cart{
+                     display: flex;
+                     justify-content: flex-start;
+                     align-items: center;
+                     width: 100%;
+                     .input-text{
+                        -webkit-appearance: none !important;
+                        border: 1px solid #ccc;
+                        height: 35px;
+                        border-radius: 10px;
+                        text-align: center !important;
+                        width: 60px;
+                        appearance: none;
+                        margin-left: 10px;;
+                     }
+                     .single_add_to_cart_button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 130px;
+                        background: red;
+                        color: #fff;
+                        height: 35px;
+                        font-size: 12px;
+                        font-weight: bold;
+                        border-radius: $radius;
+                        transition:  all ease-in-out .3s;
+                        &:hover{
+                            background-color: #fff;
+                            border: 1px solid $pred;
+                            color: $pred;
+                        }
+                     }
+                 }
+                 .product_meta{
+                     display: flex;
+                     justify-content: flex-start;
+                     flex-direction: column;
+                     flex-wrap: wrap;
+                     .posted_in{
+                         margin-top:10px;
+                         color: #666;
+                         font-weight: bold;
+                         font-size: 12px;
+                         a{
+                             color: $pred;
+                             font-size: 11px !important;
+                             font-weight: bold;
+
+                             
+                         }
+                     }
+                     .tagged_as{
+                        margin-top:10px;
+                        color: #666;
+                        font-weight: bold;
+                        font-size: 13px;
+                        a{
+                            color: $pred;
+                            font-size: 12px !important;             
+                                        font-weight: bold;
+
+                            
+                        }
+                     }
+                 }
+             }
+         }
+        
      }
+     .product-img-gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+       @media screen and (min-width:992px){
+        border-left: 1px solid #ccc;
+        padding: 0 15px !important; 
+    }
+        .onsale{
+            display: none;
+        }
+        .woocommerce-product-gallery{
+         .flex-viewport{
+             width: 100%;
+             .flex-active-slide{
+                 width: 100%;
+                 img{
+                     width: 100% !important;
+                     min-height: 300px;
+                     border-radius: $radius;
+                     margin: 10px auto !important;
+                 }
+             }
+         }
+         .flex-control-thumbs{
+             display: flex;
+             justify-content: flex-start;
+             align-items: center;
+             flex-wrap: wrap;
+             flex-direction: row;
+             li{
+                 img{
+                     padding: 10px !important;
+                     border-radius: $radius !important;
+                     width: 100px;
+                     height: 100px;
+                     &:hover{
+                         cursor: pointer !important;
+                     }
+                 }
+             }
+         }  
+        }
+        
+      }
+      .woocommerce-tabs{
+          background-color: #fff;
+          padding: 10px;
+          border-radius: $radius;
+          box-shadow: $box-shadow;
+          margin-top: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          flex-wrap: wrap;
+          .wc-tabs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $pred;
+            width: auto;
+            max-width: 300px;
+            height: 40px;
+            border-radius: $radius;
+            border: 1px solid $pred;
+            overflow: hidden;
+            margin: 40px 0 !important;
+            li{
+                transition: all ease-in-out .3s;
+                height: 100%;
+                a{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: bold;
+                    height: 100%;
+                    padding: 0 10px;
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'shabnam';
+                    align-items: center;
+                }
+            }
+            .active{
+                a{
+                    background-color: #fff;
+                    color: $pred;
+                }
+            }
+          }
+          .woocommerce-Tabs-panel{
+              width: 100% !important;
+              padding: 10px;
+              h2{
+                  font-family: 'shabnam';
+                  font-weight: bold;
+                  font-size: 16px;
+                  color: #666;
+                  margin-bottom: 18px;
+              }
+              p{
+                  text-align: justify !important;
+                  line-height: 28px;
+                  color: #666;
+                  
+              }
+              table{
+                  width: 100% !important;
+                  background-color: #eee;
+                  border-radius: $radius;
+                  overflow: hidden;
+                  tr{
+                     border-bottom: 1px solid #ddd;
+                      &:last-child{
+                          border-bottom: 0 !important;
+                      }
+                      th{
+                          padding-right: 10px;
+                      }
+                      td{
+                          p{
+                              margin: 10px 0 !important;
+                          }
+                      }
+                  }
+              }
+              .woocommerce-Reviews{
+                  font-size: 14px !important;
+                  .commentlist{
+                      li{
+                          .avatar{
+                              border-radius: 50%;
+                          }
+                          .comment-text{
+                              margin: 10px 0;
+                              padding: 10px;
+                              background-color: #eee;
+                              border-radius: $radius;
+                              .meta{
+                                  .woocommerce-review__author{
+                                      color: #333;
+                                      font-weight: bold;
+                                  }
+                              }
+                          }
+                      }
+                  }
+                  #review_form_wrapper{
+                      margin: 30px 0;
+                      #review_form{
+                          .comment-reply-title{
+                              font-weight: bold;
+                              font-family: 'shabnam';
+                              color: #333;
+                              font-size: 15px;
+                          }
+                          .stars{
+                              display: flex;
+                              flex-direction: row;
+                              span{
+                                display: flex;
+                                flex-direction: row;
+                                a{
+                                    margin: 8px;
+                                    width: 25px;
+                                    height: 25px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #fff;
+                                    border-radius: $radius;
+                                    background-color: $pred;
+                                    transition:  all ease-in-out .3s;
+                                    &:hover{
+                                        color: $pred;
+                                        border: 1px solid $pred;
+                                        background-color: #fff;
+                                    }
+                                }
+                              }
+                          }
+                          label{
+                              font-family: 'shabnam';
+                              color: #444;
+                              font-weight: bold;
+                          }
+                          .comment-form-comment{
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: flex-start;
+                              align-items: flex-start;
+                              textarea{
+                                  border: 1px solid #ddd;
+                                  border-radius: $radius;
+                                  padding: 10px;
+                                  width: 100% !important;
+                                  height: 100px;
+                                  max-width: 400px !important;
+                              }
+                          }
+                          .comment-form-author{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            input{
+                                border: 1px solid #ddd;
+                                border-radius: $radius;
+                                padding: 10px;
+                                width: 100% !important;
+                                height: 40px;
+                                max-width: 200px !important;
+                            }
+                          }
+                          .comment-form-email{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            input{
+                                border: 1px solid #ddd;
+                                border-radius: $radius;
+                                padding: 10px;
+                                width: 100% !important;
+                                height: 40px;
+                                max-width: 200px !important;
+                            }
+                          }
+                          .form-submit{
+                              .submit{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100px;
+                                background: red;
+                                color: #fff;
+                                height: 35px;
+                                font-size: 12px;
+                                font-weight: bold;
+                                border: 0;
+                                border-radius: $radius;
+                                transition:  all ease-in-out .3s;
+                                &:hover{
+                                    background-color: #fff;
+                                    border: 1px solid $pred;
+                                    color: $pred;
+                                }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
  }
+.woocommerce-product-gallery__trigger{
+    display: none !important;
+}

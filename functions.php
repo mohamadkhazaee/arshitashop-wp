@@ -3,6 +3,15 @@
 	@ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
+
+
+function woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-zoom' );
+        add_theme_support( 'wc-product-gallery-lightbox' );
+        add_theme_support( 'wc-product-gallery-slider' );
+}
+add_action( 'after_setup_theme', 'woocommerce_support' );
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
@@ -10,6 +19,13 @@
     //////////////////////////////////////////////////
 	//////////////////////////////////////////////////    
 						//post view count
+
+
+
+
+
+
+
 	function get_post_view($post_id){
 		if(intval($post_id)){
 			$post_view = get_post_meta( $post_id , 'views' , true);
