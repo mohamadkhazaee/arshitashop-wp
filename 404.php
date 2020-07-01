@@ -2,7 +2,7 @@
 
 
 <section class="page-404"> 
-<h1>متاسفانه صفحه مورد نظر شما پیدا نشد</h1>
+<h1>متاسفانه صفحه مورد نظر شما پیدا نشد!</h1>
 <div class="svg-404">
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
