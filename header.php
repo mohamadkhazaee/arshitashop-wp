@@ -39,14 +39,24 @@
                 </div>
                 <div class="col-8 col-lg-6">
                     <div class="header-search-container">
-                          <form action="">
+                        
+                          <!-- <form action="">
                               <button type="submit" class="submit-header">
                                   <i class="mdi mdi-magnify"></i>
                               </button>
                               <input type="text" placeholder="جستجوی محصولات...">
 
-                          </form>
-                    </div>
+                          </form> -->
+                    
+                          <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                          <button type="submit"  class="submit-header" >  <i class="mdi mdi-magnify"></i></button>
+
+                            <label class="screen-reader-text" for="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>"><?php esc_html_e( 'Search for:', 'woocommerce' ); ?></label>
+                                <input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field form-control search-input" placeholder="<?php echo esc_attr__( 'Search products&hellip;', 'woocommerce' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+                                <input type="hidden" name="post_type" value="product" />
+                        </form>
+
+                        </div>
                 </div>
                 <div class="col-4">
                     <div class="header-action" >
