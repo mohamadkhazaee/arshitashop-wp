@@ -31,15 +31,14 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                                 <div class="product-top">
                                                     <?php do_action( 'woocommerce_before_shop_loop_item_title' ) ?>
                                                     <div class="product-overlay">
-                                                        <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" href="#">
-                                                            <i class="mdi mdi-cart-outline"></i>
+                                                   
+                                                    <a data-toggle="tooltip" title="افزودن به سبد خرید" href="#">
+                                                            <i class="mdi mdi-cart"></i>
                                                         </a>
-                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="#">
+                                                        <a data-toggle="tooltip" title="مشاهده جزئیات" href="<?php echo the_permalink(); ?>">
                                                             <i class="mdi mdi-magnify"></i>
                                                         </a>
-                                                        <a data-toggle="tooltip" title="اضافه به لیست علاقه مندی" href="#">
-                                                            <i class="mdi mdi-cards-heart"></i>
-                                                        </a>
+                                                        <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
                                                         <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
                                                             <i class="mdi mdi-toggle-switch-outline"></i>
                                                         </a>

@@ -125,3 +125,46 @@ main{
        
     }
 }
+.product-item{
+    .yith-wcwl-add-to-wishlist {
+        margin-top: 0 !important;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    
+        a{
+            i{
+                margin-right: 0 !important;
+            }
+        }
+    }
+}
+
+.entry-summary{
+    .yith-wcwl-add-to-wishlist { 
+       
+    
+        a{
+            margin-top: 0 !important;
+            display: flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color: $pred;
+            color: #fff;
+            border-radius: $radius;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            i{
+                margin-right: 0 !important;
+                color: #fff;
+                font-size: 22px;
+            }
+        }
+    }
+}
