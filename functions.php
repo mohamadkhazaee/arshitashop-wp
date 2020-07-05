@@ -157,9 +157,9 @@ function cmb2_slider_url_metabox(){
 function arshitashop_widget_setup(){
 	register_sidebar( array(
         /* translators: %d: Sidebar number. */
-        'name'          => 'سایدبار 1',
-        'id'            => "sidebar-$i",
-        'description'   => 'توضیحات',
+        'name'          => 'سایدبار فروشگاه',
+        'id'            => "sidebar_shop",
+        'description'   => 'سایدبار مربوط به صفحه فروشگاه',
         'class'         => '',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget'  => "</li>\n",

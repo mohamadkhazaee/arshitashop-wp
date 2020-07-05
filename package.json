@@ -1,15 +1,22 @@
 {
-  "name": "arshitakala",
+  "name": "arshitashop",
   "version": "1.0.0",
-  "description": "a woocommerce website for arshita web",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w assets/scss/ -o assets/css/ --recursive"
   },
-  "keywords": [
-    "shop"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamadkhazaee/arshitashop-wp.git"
+  },
   "author": "mohamad khazaee",
   "license": "ISC",
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/mohamadkhazaee/arshitashop-wp/issues"
+  },
+  "homepage": "https://github.com/mohamadkhazaee/arshitashop-wp#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

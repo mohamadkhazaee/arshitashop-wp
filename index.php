@@ -105,27 +105,37 @@
                                     <a href="#" class="see-all">مشاهده همه</a>
                                 </div>
                                 <div class="owl-container">
+                                    <?php 
+                                    $brands_index_loop_args = array(
+                                        'taxonomy' => 'yith_product_brand',
+                                        'post_type'  =>'product'
+                                    );
+                                      $brands_index_loop =get_categories($brands_index_loop_args);
+                                    //var_dump($brands_index_loop);
+                                    var_dump($brands_index_loop);
+
+                                    ?>
                                    <div class="owl-loop-slider-brands owl-carousel owl-theme">
-                                       <div class="item">
-                                           <a href="#">
-                                               <img src="assets/img/brand1.png" alt="">
+                                   <?php 
+                                            if ( $brands_index_loop->have_posts() ) {
+                                                while ( $brands_index_loop->have_posts() ) {
+                                                    $brands_index_loop->the_post(); 
+                                                  ?>
+
+                                    <div class="item">
+                                           <a href="<?php the_permalink() ?>">
+                                               <?php the_post_thumbnail() ?>
                                            </a>
                                        </div>
-                                       <div class="item">
-                                        <a href="#">
-                                            <img src="assets/img/brand2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="assets/img/brand3.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="assets/img/brand2.jpg" alt="">
-                                        </a>
-                                    </div>
+                                   
+
+                                                    <?php
+                                                } // end while
+                                            } // end if
+                                            wp_reset_postdata();
+                                            ?>
+                                       
+                                    
                                    </div>
                                 </div>
                             </div>

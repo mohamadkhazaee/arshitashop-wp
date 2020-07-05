@@ -32,8 +32,8 @@ do_action( 'woocommerce_before_main_content' );
 <section class="container-fluid">
 	<div class="row">
 		<div class="col-12 col-md-4 col-lg-3">
-			<?php 	
-				do_action( 'woocommerce_sidebar' ); ?>
+		<?php wc_get_template_part( 'templates/archive-products', 'sidebar' ); ?>
+
 		</div>
 		<div class="col-12 col-md-8 col-lg-9">
 					<div class="row">
@@ -84,7 +84,7 @@ do_action( 'woocommerce_before_main_content' );
 							do_action( 'woocommerce_shop_loop' );
 
 							?>
-							<div class="col-12 col-md-6 col-lg-4">
+							<div class="col-12 col-md-6 col-lg-3">
 							<?php wc_get_template_part( 'templates/content', 'product' ); ?>
 							</div>
 							<?php
