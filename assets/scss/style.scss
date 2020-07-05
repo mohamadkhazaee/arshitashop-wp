@@ -10,7 +10,6 @@
 @import 'single-blog.scss';
 @import 'category-blog.scss';
 @import '_single-product.scss';
-@import 'products-archive.scss';
 @media screen and(max-width:991px){
     .responsive-overlay{
         position: fixed;
@@ -169,23 +168,3 @@ main{
         }
     }
 }
-.woocommerce-breadcrumb{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fff;
-    min-height: 50px;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 10px;
-    margin: 0 15px;
-    border-radius: $radius;
-    box-shadow: $box-shadow;
-    margin-bottom: 20px;
-    >a{
-        color: $pred;
-        transition: all ease-in-out .2s;
-        &:hover{
-            color: #999;
-        }
-    }
- }
