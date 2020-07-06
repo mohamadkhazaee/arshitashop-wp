@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
         <div class="container-fluid">
-            <div class="row" style="padding-top:100px">
+            <div class="row" style="padding-top:120px">
              <?php echo woocommerce_breadcrumb(); ?> 
                 <div class="col-12"><h1 class="page-title"><?php the_title(); ?></h1></div>
             </div>

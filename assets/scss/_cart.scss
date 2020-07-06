@@ -1,4 +1,19 @@
+table.cart{
+    border-radius: $radius !important;
+}
+table.shop_table{
+    border-radius: $radius !important;
+
+}
 .woocommerce-cart-form{
+    border-radius: 50%;
+    .product-thumbnail{
+        >a{
+            >img{
+                max-width: 100px !important;
+            }
+        }
+    }
     .quantity{
         input{ 
             border: 1px solid #ccc;
@@ -6,7 +21,7 @@
             text-align: center !important;
 
         }
-    }
+    } 
     .product-name{
         a{
             font-family: 'shabnam' !important;
@@ -75,6 +90,9 @@
 
 .cart-collaterals{
     margin: 15px 0;
+    .woocommerce-remove-coupon{
+        color: $pred !important;
+    }
     .cart_totals{
         h2{
             font-family: 'shabnam';
@@ -82,6 +100,7 @@
             font-size: 18px;
         }
         .wc-proceed-to-checkout{
+            
             a{
                 color: #fff !important;
                 background-color: $pred !important;

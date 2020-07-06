@@ -38,7 +38,7 @@
 }
 main{
     background-color: #f8f8f8;
-    padding-top: 100px;
+    padding-top: 150px;
 } 
 
 #footer-backTo-top{
@@ -184,10 +184,42 @@ main{
     &::before{
         color: $pred !important;
     }
+   
+    .wc-forward{
+        width: 140px !important;
+        height: 35px !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border: 1px solid $pred;
+        background-color: $pred;
+        border-radius: $radius;
+        font-family: 'shabnam';
+        font-weight: bold;
+        transition: all ease-in-out .3s;
+        &:hover{
+            background-color: transparent;
+            color: $pred;
+        }
+        
+    }
 }
 .woocommerce-info{
     border-top: 3px solid $pred !important;
+    font-family: 'shabnam' !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
     &::before{
         color: $pred !important;
+    }
+    .showcoupon{
+        color: $pred;
+        transition: all ease-in-out .3s;
+        font-family: 'shabnam' !important;
+    font-size: 12px !important;
+        &:hover{
+            color: #f0000f;
+        }
     }
 }
