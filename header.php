@@ -748,5 +748,4 @@
             </ul> -->
         </div>
     </nav>
-    <?php echo wp_list_categories() ?>
     <?php wp_head() ?>

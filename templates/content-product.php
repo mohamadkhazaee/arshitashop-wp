@@ -39,6 +39,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                                             <i class="mdi mdi-magnify"></i>
                                                         </a>
                                                         <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
+                                                        <?php echo do_shortcode('[yith_wcwl_add_to_compare]'); ?>
                                                         <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
                                                             <i class="mdi mdi-toggle-switch-outline"></i>
                                                         </a>

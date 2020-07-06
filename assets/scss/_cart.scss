@@ -1,0 +1,104 @@
+.woocommerce-cart-form{
+    .quantity{
+        input{ 
+            border: 1px solid #ccc;
+            border-radius: $radius;
+            text-align: center !important;
+
+        }
+    }
+    .product-name{
+        a{
+            font-family: 'shabnam' !important;
+
+
+        }
+    }
+    .coupon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .input-text{
+            border: 1px solid #ccc !important;
+            border-radius: $radius !important;
+            text-align: center !important;
+            height: 35px !important;
+            margin-left: 10px;
+            font-family: 'shabnam' !important;
+
+            font-size: 13px;
+        }
+        button.button{
+            font-size: 13px;
+            width: 120px !important;
+            height: 35px !important;
+            padding: 0 10px !important;
+            color: #fff;
+            background-color: $pred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'shabnam' !important;
+
+            border-radius: $radius;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background-color: #fff;
+                border:1px solid $pred;
+                color: $pred;
+            }
+        }
+    }
+    .button{
+        font-size: 13px;
+        width: 120px !important;
+        height: 35px !important;
+        padding: 0 10px !important;
+        color: #fff !important;
+        background-color: $pred !important;
+        display: flex !important;
+        font-family: 'shabnam' !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-radius: $radius !important;
+        transition: all ease-in-out .3s;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        &:hover{
+            background-color: #fff !important;
+            border:1px solid $pred !important;
+            color: $pred !important;
+        }
+    }
+}  
+
+.cart-collaterals{
+    margin: 15px 0;
+    .cart_totals{
+        h2{
+            font-family: 'shabnam';
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .wc-proceed-to-checkout{
+            a{
+                color: #fff !important;
+                background-color: $pred !important;
+                font-family: "shabnam" !important;
+                border: 1px solid $pred;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 35px;
+                border-radius: $radius;
+                transition: all ease-in-out .3s;
+                &:hover{
+                    background-color: #fff !important;
+                    color: $pred !important;
+                }
+            }
+        }
+    }
+}

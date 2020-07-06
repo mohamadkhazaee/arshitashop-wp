@@ -1,0 +1,40 @@
+.woocommerce a.remove{
+     width: 25px !important;
+     height: 25px !important;
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+     transition: all ease-in-out .3s;
+     i{
+         font-size: 18px;
+     }
+ }
+ table{
+.product-name{
+    >a{
+        color: #333;
+        transition: all ease-in-out .3s;
+        &:hover{
+            color: $pred;
+        }
+    }
+}
+}ul.shop_table{
+    li{
+        display: flex;
+        flex-direction: row-reverse;
+        .additional-info-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .product-remove{
+                a{
+                    i{
+                        color: $pred;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

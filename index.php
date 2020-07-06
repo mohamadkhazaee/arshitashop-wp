@@ -108,31 +108,32 @@
                                     <?php 
                                     $brands_index_loop_args = array(
                                         'taxonomy' => 'yith_product_brand',
-                                        'post_type'  =>'product'
+                                        'post_type'  =>'product',
+                                        'hide_empty' => false
                                     );
                                       $brands_index_loop =get_categories($brands_index_loop_args);
                                     //var_dump($brands_index_loop);
-                                    var_dump($brands_index_loop);
 
                                     ?>
                                    <div class="owl-loop-slider-brands owl-carousel owl-theme">
                                    <?php 
-                                            if ( $brands_index_loop->have_posts() ) {
-                                                while ( $brands_index_loop->have_posts() ) {
-                                                    $brands_index_loop->the_post(); 
-                                                  ?>
+                                            foreach($brands_index_loop as $brand){
+                                                ?>
+                                                       <div class="item">
+                                           <a href="<?php echo  bloginfo( 'url' ) . '/product-brands/' . $brand->slug . '/'; ?>">
+                                               <?php
+                                               $thumb_id = get_woocommerce_term_meta( $brand->term_id, 'thumbnail_id', true );
+                                               $term_img = wp_get_attachment_url(  $thumb_id );
+                                             
+                                            
 
-                                    <div class="item">
-                                           <a href="<?php the_permalink() ?>">
-                                               <?php the_post_thumbnail() ?>
+
+                                                ?>
+                                               <img src="<?php echo $term_img; ?>">
                                            </a>
                                        </div>
-                                   
-
-                                                    <?php
-                                                } // end while
-                                            } // end if
-                                            wp_reset_postdata();
+                                                <?php
+                                            }
                                             ?>
                                        
                                     

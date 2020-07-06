@@ -3503,6 +3503,156 @@ footer {
           left: 0;
           display: flex; }
 
+.woocommerce-MyAccount-navigation ul {
+  width: 100%;
+  background-color: #f64b3c;
+  border-radius: 10px;
+  color: #fff !important;
+  overflow: hidden;
+  max-width: 400px;
+  border: 1px solid #f64b3c; }
+  .woocommerce-MyAccount-navigation ul li a {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10px;
+    height: 40px;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.4); }
+    .woocommerce-MyAccount-navigation ul li a:hover {
+      background-color: #fff;
+      color: #f64b3c;
+      transition: all ease-in-out .3s; }
+  .woocommerce-MyAccount-navigation ul .is-active a {
+    border: 0;
+    background-color: #fff;
+    color: #f64b3c;
+    transition: all ease-in-out .3s;
+    position: relative; }
+    .woocommerce-MyAccount-navigation ul .is-active a::after {
+      position: absolute;
+      content: '\F0141';
+      top: 10px;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f64b3c;
+      font-family: 'Material Icons';
+      font-size: 20px; }
+
+.woocommerce-cart-form .quantity input {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center !important; }
+
+.woocommerce-cart-form .product-name a {
+  font-family: 'shabnam' !important; }
+
+.woocommerce-cart-form .coupon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .woocommerce-cart-form .coupon .input-text {
+    border: 1px solid #ccc !important;
+    border-radius: 10px !important;
+    text-align: center !important;
+    height: 35px !important;
+    margin-left: 10px;
+    font-family: 'shabnam' !important;
+    font-size: 13px; }
+  .woocommerce-cart-form .coupon button.button {
+    font-size: 13px;
+    width: 120px !important;
+    height: 35px !important;
+    padding: 0 10px !important;
+    color: #fff;
+    background-color: #f64b3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'shabnam' !important;
+    border-radius: 10px;
+    transition: all ease-in-out .3s; }
+    .woocommerce-cart-form .coupon button.button:hover {
+      background-color: #fff;
+      border: 1px solid #f64b3c;
+      color: #f64b3c; }
+
+.woocommerce-cart-form .button {
+  font-size: 13px;
+  width: 120px !important;
+  height: 35px !important;
+  padding: 0 10px !important;
+  color: #fff !important;
+  background-color: #f64b3c !important;
+  display: flex !important;
+  font-family: 'shabnam' !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 10px !important;
+  transition: all ease-in-out .3s;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  .woocommerce-cart-form .button:hover {
+    background-color: #fff !important;
+    border: 1px solid #f64b3c !important;
+    color: #f64b3c !important; }
+
+.cart-collaterals {
+  margin: 15px 0; }
+  .cart-collaterals .cart_totals h2 {
+    font-family: 'shabnam';
+    font-weight: bold;
+    font-size: 18px; }
+  .cart-collaterals .cart_totals .wc-proceed-to-checkout a {
+    color: #fff !important;
+    background-color: #f64b3c !important;
+    font-family: "shabnam" !important;
+    border: 1px solid #f64b3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    transition: all ease-in-out .3s; }
+    .cart-collaterals .cart_totals .wc-proceed-to-checkout a:hover {
+      background-color: #fff !important;
+      color: #f64b3c !important; }
+
+.woocommerce a.remove {
+  width: 25px !important;
+  height: 25px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: all ease-in-out .3s; }
+  .woocommerce a.remove i {
+    font-size: 18px; }
+
+table .product-name > a {
+  color: #333;
+  transition: all ease-in-out .3s; }
+  table .product-name > a:hover {
+    color: #f64b3c; }
+
+ul.shop_table li {
+  display: flex;
+  flex-direction: row-reverse; }
+  ul.shop_table li .additional-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    ul.shop_table li .additional-info-wrapper .product-remove a i {
+      color: #f64b3c;
+      font-size: 20px; }
+
 @media screen and (max-width: 991px) {
   .responsive-overlay {
     position: fixed;
@@ -3524,7 +3674,7 @@ footer {
 
 main {
   background-color: #f8f8f8;
-  padding-top: 80px; }
+  padding-top: 100px; }
 
 #footer-backTo-top {
   width: 100%;
@@ -3625,3 +3775,19 @@ main {
     margin-right: 0 !important;
     color: #fff;
     font-size: 22px; }
+
+.page-title {
+  font-family: 'shabnam';
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; }
+
+.woocommerce-message {
+  border-top: 3px solid #f64b3c !important; }
+  .woocommerce-message::before {
+    color: #f64b3c !important; }
+
+.woocommerce-info {
+  border-top: 3px solid #f64b3c !important; }
+  .woocommerce-info::before {
+    color: #f64b3c !important; }

@@ -38,9 +38,12 @@ if ( $related_products ) : ?>
 					$post_object = get_post( $related_product->get_id() );
 
 					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+?>
 
-					wc_get_template_part( 'templates/content', 'product' );
+				<div class="col-12 col-md-6 col-lg-3">
+			<?php	wc_get_template_part( 'templates/content', 'product' );
 					?>
+				</div>
 			<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>

@@ -1,0 +1,52 @@
+.woocommerce-MyAccount-navigation{
+    ul{
+        width: 100%;
+        background-color: $pred;
+        border-radius: $radius;
+        color: #fff !important;  
+        overflow: hidden;
+        max-width: 400px;
+        border: 1px solid $pred;
+        li{
+            a{
+                display: flex;
+                justify-content: flex-start;
+                padding-right: 10px;
+                height: 40px;
+                align-items: center;
+                color: #fff;
+                font-weight: bold;
+                font-size: 15px;
+                border-bottom: 1px solid rgba(200,200,200,.4);
+                &:hover{
+                background-color: #fff;
+                color: $pred;
+                transition: all ease-in-out .3s;
+                }
+            }
+        }
+        .is-active{
+            a{
+                border: 0 ;
+                background-color: #fff;
+                color: $pred;
+                transition: all ease-in-out .3s;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '\F0141';
+                    top: 10px;
+                    left: 20px;
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $pred;
+                    font-family: 'Material Icons';
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+} 

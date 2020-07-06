@@ -66,17 +66,19 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 			<?php $column_count ++; ?>
 			<th class="product-remove">
 				<span class="nobr">
-					<?php echo esc_html( apply_filters( 'yith_wcwl_wishlist_view_remove_heading', '', $wishlist ) ); ?>
+					حذف
 				</span>
 			</th>
 		<?php endif; ?>
 
-		<th class="product-thumbnail"></th>
+		<th class="product-thumbnail">
+			<span>تصویر</span>
+		</th>
 
 		<th class="product-name">
 			<span class="nobr">
-				<?php echo esc_html( apply_filters( 'yith_wcwl_wishlist_view_name_heading', __( 'Product name', 'yith-woocommerce-wishlist' ), $wishlist ) ); ?>
-			</span>
+			نام محصول
+		</span>
 		</th>
 
 		<?php if ( $show_price || $show_price_variations ) : ?>
@@ -152,7 +154,9 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 					<?php if ( $show_remove_product ) : ?>
 						<td class="product-remove">
 							<div>
-								<a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item->get_product_id() ) ); ?>" class="remove remove_from_wishlist" title="<?php echo esc_html( apply_filters( 'yith_wcwl_remove_product_wishlist_message_title', __( 'Remove this product', 'yith-woocommerce-wishlist' ) ) ); ?>">&times;</a>
+								<a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item->get_product_id() ) ); ?>" class="remove remove_from_wishlist" title="<?php echo esc_html( apply_filters( 'yith_wcwl_remove_product_wishlist_message_title', __( 'Remove this product', 'yith-woocommerce-wishlist' ) ) ); ?>">
+								<i class="mdi mdi-trash-can-outline"></i>
+							</a>
 							</div>
 						</td>
 					<?php endif; ?>
