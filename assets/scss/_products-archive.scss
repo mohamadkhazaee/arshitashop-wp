@@ -33,14 +33,14 @@
     padding-left: 15px;
     margin-right: 15px;
     margin-left: 15px;
-    margin-bottom: 20px;
-    min-height: 50px;
-    box-shadow: $box-shadow;
+  //  margin-bottom: 20px;
+    min-height: 50px; 
+   // box-shadow: $box-shadow;
     border-radius: $radius;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #fff;
+   // background-color: #fff;
     .breadcrumb-item{
         &::before{
             padding: 0 5px !important;

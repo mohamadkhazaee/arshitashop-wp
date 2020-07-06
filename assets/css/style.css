@@ -3194,14 +3194,11 @@ footer {
   padding-left: 15px;
   margin-right: 15px;
   margin-left: 15px;
-  margin-bottom: 20px;
   min-height: 50px;
-  box-shadow: 0 2px 12px -5px #000;
   border-radius: 10px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  background-color: #fff; }
+  align-items: center; }
   .woocommerce-breadcrumb .breadcrumb-item::before {
     padding: 0 5px !important; }
   .woocommerce-breadcrumb .breadcrumb-item::after {
