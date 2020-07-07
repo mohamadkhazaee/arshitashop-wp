@@ -32,7 +32,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                                     <?php do_action( 'woocommerce_before_shop_loop_item_title' ) ?>
                                                     <div class="product-overlay">
                                                    
-                                                    <a data-toggle="tooltip" title="افزودن به سبد خرید" href="#">
+                                                    <a data-toggle="tooltip" title="افزودن به سبد خرید" href="<?php echo $product->add_to_cart_url(); ?>">
                                                             <i class="mdi mdi-cart"></i>
                                                         </a>
                                                         <a data-toggle="tooltip" title="مشاهده جزئیات" href="<?php echo the_permalink(); ?>">

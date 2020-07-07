@@ -60,16 +60,11 @@
                 </div>
                 <div class="col-4">
                     <div class="header-action" >
-                        <div class="dropdown">
-                            <button class=" dropdown-toggle" type="button" id="header-mini-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              سبد خرید
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="header-mini-cart">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </div>
+                        <a class="header-cart-btn" href="<?php echo wc_get_cart_url(); ?>">
+                            <i class="mdi mdi-cart-outline"></i>
+                            <span><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
+                        </a>
+                        
                           <div class="dropdown">
                             <button class=" dropdown-toggle" type="button" id="header-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               حساب کاربری
