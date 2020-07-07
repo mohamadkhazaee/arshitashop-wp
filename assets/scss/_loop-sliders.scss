@@ -519,6 +519,7 @@
             }
             .owl-dots{
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
             }
@@ -975,6 +976,7 @@
                     display: flex;
                     width: 100%;
                     justify-content: center;
+                    flex-wrap: wrap;
                     align-items: center;
                 }
                 &:hover{
@@ -1480,6 +1482,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-wrap: wrap;
             }
             @media screen and (max-width:991px){
                 .owl-nav{
@@ -1630,6 +1633,7 @@
             .owl-dots{
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
                 align-items: center;
             }
             @media screen and (max-width:991px){

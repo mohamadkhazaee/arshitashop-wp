@@ -15,7 +15,7 @@
                                     <?php
                                 $product_new_args = array(
                                     'post_type' => 'product',
-                                    'posts_per_page' => 20,
+                                    'posts_per_page' => 12,
                                     'orderby' => 'date',
                                     'order'   => 'DESC'
 

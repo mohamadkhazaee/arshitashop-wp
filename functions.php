@@ -54,8 +54,11 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
      function myThemeSetup(){
     		  //in here we write code we want to execute when thme is being loaded
 			   register_nav_menu('MainMenu' , 'منوی اصلی');
+			   register_nav_menu('footer_arshia' , 'منوی فوتر ستون آرشیتا');
+			   register_nav_menu('footer_quick_access' , 'منوی فوتر ستون دسترسی سریع');
+			   register_nav_menu('footeraccount' , 'منوی فوتر ستون حساب کاربری');
+			   register_nav_menu('footer_services' , 'منوی فوتر ستون خدمات مشتریان');
 			   add_theme_support( 'woocommerce' );
-
 			   add_theme_support( 'post-thumbnails' );
 				add_image_size( 'slider-thumbnails', 850 , 350 , true );
 
@@ -99,7 +102,7 @@ function slider_url_metabox_field(){
 }
 function save_slider_details(){
 	global $post;
-	if(define('DOING_AUTOSAVE') && DOING_AUTOSAVE ){
+	if(define('DOING_AUTOSAVE' , $AUTO_SAVE) && DOING_AUTOSAVE ){
 		return $post->ID;
 	}
 	update_post_meta($post->ID , 'slider_url_metabox_field' , $_POST['slider_url_metabox_field']);

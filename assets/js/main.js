@@ -7,16 +7,6 @@ $('.document').ready(function(){
     let deviceWidth = window.innerWidth;
     console.log(deviceWidth);
     
-    //remove text in header buttons for mobile size
-    window.addEventListener("resize", resizeFunctions);
-    function resizeFunctions(){
-        if(deviceWidth <= 992){
-            $('.header-action .dropdown .dropdown-toggle').empty()
-        }
-    }
-    if(deviceWidth <= 992){
-        $('.header-action .dropdown .dropdown-toggle').empty()
-    }
 
 
 

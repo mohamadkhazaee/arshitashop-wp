@@ -43,84 +43,78 @@
             <div class="row">
                 <div class="col-6 col-lg-3">
                     <div class="footer-ul">
-                        <ul>
-                            <span class="footer-ul-header">آرشیتا کالا</span>
-                            <li>
-                                <a href="#">درباره ما</a>
-                            </li>
-                            <li>
-                                <a href="#">خدمات ما</a>
-                            </li>
-                            <li>
-                                <a href="#">مشتریان ما</a>
-                            </li>
-                            <li>
-                                <a href="#">ارتباط با ما</a>
-                            </li>
-                            
-                        </ul>
+                    <span class="footer-ul-header">آرشیتا کالا</span>
+                    <?php if( has_nav_menu('footer_arshia')) : ?>
+                      <?php
+                    $config1 = array(
+                        'container'       => 'ul',
+                        'menu_class'      => 'main-menu',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth'           => 0,
+                    );
+                 wp_nav_menu($config1); ?>
+        <?php else : ?>
+            <div>برای اینجا یک منو تعریف کنید</div>
+        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="footer-ul">
-                        <ul>
-                            <span class="footer-ul-header">خدمات مشتریان</span>
-                            <li>
-                                <a href="#">پرسش های متداول</a>
-                            </li>
-                            <li>
-                                <a href="#">شرایط بازگرداندن کالا</a>
-                            </li>
-                            <li>
-                                <a href="#">شرایط استفاده</a>
-                            </li>
-                        
-                            
-                        </ul>
+                    <span class="footer-ul-header">حساب کاربری</span>
+                    <?php if( has_nav_menu('footeraccount')) : ?>
+                      <?php
+                    $config2 = array(
+                        'container'       => 'ul',
+                        'menu_class'      => 'main-menu',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth'           => 0,
+                    );
+                 wp_nav_menu($config2); ?>
+        <?php else : ?>
+            <div>برای اینجا یک منو تعریف کنید</div>
+        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="footer-ul">
-                        <ul>
-                            <span class="footer-ul-header">راهنمای خرید
-                            </span>
-                            <li>
-                                <a href="#">تماس با ایران کالا</a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#">فرصت‌های شغلی</a>
-                            </li>
-                            <li>
-                                <a href="#">اتاق خبر ایران کالا</a>
-                            </li>
-                            <li>
-                                <a href="#">اتاق خبر ایران کالا</a>
-                            </li>
-                            
-                        </ul>
+                    <span class="footer-ul-header">دسترسی سریع</span>
+                    <?php if( has_nav_menu('footer_quick_access')) : ?>
+                      <?php
+                    $config3 = array(
+                        'container'       => 'ul',
+                        'menu_class'      => 'main-menu',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth'           => 0,
+                    );
+                 wp_nav_menu($config3); ?>
+        <?php else : ?>
+            <div>برای اینجا یک منو تعریف کنید</div>
+        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-6 col-lg-3">
                     <div class="footer-ul">
-                        <ul>
-                            <span class="footer-ul-header">آرشیتا کالا</span>
-                            <li>
-                                <a href="#">درباره ما</a>
-                            </li>
-                            <li>
-                                <a href="#">خدمات ما</a>
-                            </li>
-                            <li>
-                                <a href="#">مشتریان ما</a>
-                            </li>
-                            <li>
-                                <a href="#">ارتباط با ما</a>
-                            </li>
-                            
-                        </ul>
+                    <span class="footer-ul-header">خدمات مشتریان</span>
+                    <?php if( has_nav_menu('footer_services')) : ?>
+                      <?php
+                    $config4 = array(
+                        'container'       => 'ul',
+                        'menu_class'      => 'main-menu',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth'           => 0,
+                    );
+                 wp_nav_menu($config4); ?>
+        <?php else : ?>
+            <div>برای اینجا یک منو تعریف کنید</div>
+        <?php endif; ?>
                     </div>
                 </div>
             </div>

@@ -14,6 +14,7 @@
                                 'hide_empty' => false,
                                 'child_of' => 0,
                                 'depth' => 0,
+                                'parent' =>0
                              );
                            $loop_slider_sub_cats = get_terms($loop_slider_categories); 
                              foreach($loop_slider_sub_cats as $cat){

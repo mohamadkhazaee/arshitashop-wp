@@ -223,3 +223,40 @@ main{
         }
     }
 }
+
+.product-item{
+    .product-body{
+        h2{
+            height: 40px !important;
+        }
+        span.price{
+            del{
+                color: #999 !important;
+                span.woocommerce-Price-amount{
+                    font-size: 11px !important;
+                    font-weight: bold;
+                    color: #999 !important;
+                    
+                    .woocommerce-Price-currencySymbol{
+                        color: $pred;
+                        font-size: 11px !important;
+                        font-weight: bold;
+                    }
+                }
+            }
+            ins{
+                text-decoration: none !important;
+                .woocommerce-Price-amount{
+                    color: #777 !important;
+                    font-size: 13px !important;
+                    font-weight: bold !important;
+                    .woocommerce-Price-currencySymbol{
+                        color: $pred;
+                        font-size: 14px !important;
+                        font-weight: bold !important;
+                    }
+                }
+            }
+        }
+    }
+}

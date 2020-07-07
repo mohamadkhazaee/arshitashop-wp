@@ -19,7 +19,8 @@
         }
     }
 }
-}ul.shop_table{
+}
+ul.shop_table{
     li{
         display: flex;
         flex-direction: row-reverse;
@@ -38,3 +39,14 @@
         }
     }
 }
+.item-details{
+    .product-name{
+        a{
+            color: #333 !important;
+            transition: all ease-in-out .3s;
+            &:hover{
+                color: $pred;
+            }
+        }
+    }
+    }

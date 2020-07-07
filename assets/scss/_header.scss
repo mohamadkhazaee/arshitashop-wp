@@ -111,7 +111,7 @@
             border-right:1px solid #ccc ;
             justify-content: center;
             align-items: center;
-            I{
+            i{
                 font-size: 30px;
                color:  #76787A !important;
             }
@@ -133,21 +133,29 @@
         }
         .dropdown{
             margin-right: 10px;
+            width: 45px !important;
+            height: 45px;
             .dropdown-toggle{
                 width: 100%;
                 background-color: #fff;        
                 height: 45px;
+                position: relative !important;
                 color: $lightc;
-                border: $border;
-                font-size: 12px;
                 font-weight: bold;
-                border-radius: $radius;       
-                padding-right: 30px;
-                padding-left: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 font-family: 'shabnam' !important;
+                i{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    transition: all ease-in-out .3s;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    color:  #76787A ;
+                }
                 &:focus{
                     outline: none !important;
                     
@@ -156,35 +164,20 @@
             }
             #header-account{
                 &::after{
-                    font-family: 'Material Icons';
-                    content: '\F0013' !important;
-                    border: 0 !important;
-                    font-size: 25px;
-                    position: absolute;
-                    top: 0px !important;
-                    right: 5px !important;
-                    margin-left: 15px !important;
-                    width: 30px;
-                    height: 30px;
-                    color: $lightc !important;
-                    font-weight: lighter;
+                    right: -8px  !important;
+                    position: absolute !important;
+                    top: 23px !important;
                 }
             }
-            #header-mini-cart{
+            
+        }
+        .show{
+            .dropdown-toggle{
+                i{
+                    color: $pred;
+                }
                 &::after{
-                    font-family: 'Material Icons';
-                    content: '\F0111' !important;
-                    border: 0 !important; 
-                    font-size: 25px;
-                    position: absolute;
-                    top: 0px !important; 
-                    right: 5px !important;
-                    margin-left: 15px !important;
-                    width: 30px;
-                    height: 30px;
-                    color: $lightc !important;
-                    font-weight: lighter;
-
+                    color: $pred;
                 }
             }
         }
@@ -212,9 +205,11 @@
             justify-content: space-around;
             .dropdown{
                 margin: 0 !important;
+                width: 45px;
+                height: 45px;
                 .dropdown-toggle{
-                    width: 45px;
-                    height: 45px;
+                    width: 100%;
+                    height: 100%;
                     padding: 0 !important;
                     margin:0 !important;
                     border: 0 !important;
@@ -222,21 +217,7 @@
                     justify-content: center;
                     align-items: center;
                 }
-                #header-account , #header-mini-cart{
-                    &::after{
-                        margin-top: -15px !important;
-                        border: 0 !important;
-                        font-size: 30px !important;
-                        position: static;
-                        top: 0px !important;
-                        right: 5px !important;
-                        margin-left: 0px !important;
-                        width: 30px;
-                        height: 30px;
-                        color: $lightc !important;
-                        font-weight: lighter;
-                    }
-                }
+                
             }
         }
     }
