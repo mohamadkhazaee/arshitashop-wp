@@ -1,0 +1,153 @@
+.shop-main-sidebar{
+    .widget{
+        width: 100%;
+        border-radius: $radius;
+        overflow: hidden;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+        .widgettitle{
+            width: 100%;
+            margin-bottom: 0 !important;
+    height: 50px;
+    background-color: $pred;
+    color: #fff;
+    border-bottom: 1px solid #ccc ;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: 'aviny';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+        .price_slider_amount{
+            padding: 10px !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap !important;
+            input{
+                border: 1px solid #ccc !important;
+                border-radius: $radius !important;
+                display: flex !important;
+                margin: 10px 0 !important;
+                width: 49% !important;
+                padding: 10px !important;
+                height: 40px !important;
+                color: #666 !important;
+                
+            }
+            button{
+                width: 100px !important; 
+                height: 35px !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                font-weight: bold !important;
+                font-family: 'shabnam' !important;
+                background-color: $pred !important;
+                color: #fff !important;
+                transition: all ease-in-out .3s;
+                border: 1px solid $pred;
+                border-radius: $radius;
+                &:hover{
+                    background:transparent;
+                    color: $pred;
+                }
+            }
+        }
+        .product-categories{
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            padding: 20px;
+            >li{
+                width: 100% !important;
+                >a{
+                    font-family: 'shabnam' !important;
+                    width: 100% !important;
+                    height: 35px !important;
+                    padding: 10px !important;
+
+                    display: flex;
+                    justify-content: flex-start !important;
+                    align-items: center;
+                    background-color: #fff !important;
+                    color: #333;
+                    font-weight: bold !important;
+                    position: relative;
+                    &::after{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        right: -15px;
+                        top: 5px;
+                        width: 20px;
+                        height: 20px;
+                        color: #666;
+                        font-family: 'Material Icons';
+                        content: '\F012D';
+                        font-size: 20px;
+                    }
+                }
+                >ul{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: $pred;
+                    color: #333 !important;
+                    >li{
+                        width: 100% !important;
+
+                        >a{
+                            font-family: 'shabnam' !important;
+                            width: 100% !important;
+                            height: 35px !important;
+                            padding: 10px !important;
+                            padding-right: 20px !important;
+
+                            display: flex;
+                            justify-content: flex-start !important;
+                            align-items: center;
+                            background-color: #fff !important;
+                            color: #333;
+                            font-weight: bold !important;
+                            position: relative;
+                        }
+                        >ul{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-direction: column;
+                            background-color: #fff;
+                            color: #333 !important;
+                            padding-right: 30px;
+                            >li{
+                                width: 100% !important;
+
+                                >a{
+                                    font-family: 'shabnam' !important;
+                                    width: 100% !important;
+                                    height: 35px !important;
+                                    padding: 10px !important;
+                
+                                    display: flex;
+                                    justify-content: flex-start !important;
+                                    align-items: center;
+                                    background-color: #fff !important;
+                                    color: #333;
+                                    font-weight: bold !important;
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -50,3 +50,180 @@
         }
     }
 } 
+
+
+.woocommerce-form-login{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 98% !important;
+    max-width:400px !important;
+    margin: 10px auto !important;
+    border-radius: $radius !important;
+    box-shadow: $box-shadow;
+    padding: 0  !important;
+    overflow: hidden !important;
+    h2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-family: 'Aviny';
+        font-size: 35px;
+        background-color: $pred;
+        color: #fff;
+    }
+    .woocommerce-form-row{
+        width: 100% !important;
+        padding: 0 15px;
+        max-width: 300px !important;
+        margin: 10px 0 !important;
+        input{
+            width: 100% !important;
+            height: 40px !important;
+            border: 1px solid #ccc !important;
+            border-radius: $radius !important;
+            padding: 10px;
+            background-color: #fff;
+            text-align: center !important;
+            &:focus{
+                background-color: #fff !important;
+            }
+        }
+       
+    }
+    .form-row{
+        display: flex;
+        flex-direction: column !important;
+        button{
+            background-color: $pred !important;
+            border: 1px solid $pred !important;
+            color: #fff !important;
+            font-family: 'shabnam' !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            border-radius: $radius !important;
+            overflow: hidden !important;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background-color: #fff !important;
+                color: $pred !important;
+            }
+        }
+    }
+    .woocommerce-LostPassword{
+        a{
+            color: $pred !important;
+            font-family: 'shabnam' !important;
+        }
+    }
+}
+
+.woocommerce-MyAccount-content{
+    a{
+        color:$pred !important;
+    }
+}
+.woocommerce-orders-table{
+    td.woocommerce-orders-table__cell{
+        a{
+            background-color: $pred !important;
+            color: #fff !important;
+            border-radius: $radius !important;
+            border: 1px solid $pred !important;
+            display: inline-block !important;
+            text-align: center !important; 
+            justify-content: center !important;
+            align-items: center !important;
+            margin-left:5px !important;
+            transition:  all ease-in-out .3s;
+            padding: 5px 15px !important;
+            &:hover{
+                background-color: #fff !important;
+                color: $pred !important;
+            }
+            
+        }
+    }
+}
+.woocommerce-Address{
+    h3{
+        font-family: 'shabnam' !important;
+        font-weight: bold !important;
+    }
+    address{
+        border-radius: $radius;
+        background-color: #f3f3f3;
+        padding: 15px !important;
+        margin: 10px 0 !important;
+    }
+}
+form.woocommerce-EditAccountForm{
+    .woocommerce-form-row{
+        input{
+            border: 1px solid #ccc !important;
+            border-radius: $radius;
+            padding: 10px;
+        }
+    }
+    p{
+        button{
+            background-color: $pred !important;
+            color: #fff !important;
+            border: 1px solid $pred !important;
+            border-radius: $radius !important;
+            font-family: 'shabnam' !important;
+            font-weight: bold !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            transition: all ease-in-out .3s !important;
+            &:hover{
+                background-color: #fff !important;
+                color: $pred !important;
+            }
+        }
+    }
+}
+.woocommerce-MyAccount-content{
+    form{
+        h3{
+            font-family: 'shabnam' !important;
+        font-weight: bold !important;
+        }
+        .form-row{
+            input{
+                border: 1px solid #ccc !important;
+                border-radius: $radius;
+                padding: 10px;
+            }
+            label{
+                margin-left: 10px !important;
+            }
+            .woocommerce-input-wrapper{
+                min-width: 150px !important;
+            }
+        }
+        p{
+            button{
+                background-color: $pred !important;
+                color: #fff !important;
+                border: 1px solid $pred !important;
+                border-radius: $radius !important;
+                font-family: 'shabnam' !important;
+                font-weight: bold !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                transition: all ease-in-out .3s !important;
+                &:hover{
+                    background-color: #fff !important;
+                    color: $pred !important;
+                }
+            }
+        }
+    }
+}
