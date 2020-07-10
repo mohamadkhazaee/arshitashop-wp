@@ -2833,6 +2833,9 @@ footer {
 
 .single-product-page {
   margin-top: 20px; }
+  .single-product-page a.compare {
+    color: #F00000 !important;
+    font-family: 'shabnam' !important; }
   .single-product-page .product-content .product-page-top {
     width: 100%;
     background-color: #fff;

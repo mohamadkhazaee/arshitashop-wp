@@ -1,9 +1,5 @@
 <?php
     define("myRoot",get_template_directory_uri());
-	@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
-
 
 function woocommerce_support() {
 	add_theme_support( 'woocommerce' );
@@ -39,7 +35,7 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 			$views++;
 			update_post_meta($post_id , 'views' , $views);
 		}
-	}
+	};
 
 
 
@@ -53,16 +49,23 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
                 //menus//////
      function myThemeSetup(){
     		  //in here we write code we want to execute when thme is being loaded
-			   register_nav_menu('MainMenu' , 'منوی اصلی');
-			   register_nav_menu('footer_arshia' , 'منوی فوتر ستون آرشیتا');
-			   register_nav_menu('footer_quick_access' , 'منوی فوتر ستون دسترسی سریع');
-			   register_nav_menu('footeraccount' , 'منوی فوتر ستون حساب کاربری');
-			   register_nav_menu('footer_services' , 'منوی فوتر ستون خدمات مشتریان');
-			   add_theme_support( 'woocommerce' );
-			   add_theme_support( 'post-thumbnails' );
-				add_image_size( 'slider-thumbnails', 850 , 350 , true );
+			  add_theme_support( 'menus' );
+			  add_theme_support( 'woocommerce' );
+			  add_theme_support( 'post-thumbnails' );
+			   add_image_size( 'slider-thumbnails', 850 , 350 , true );
 
-				}
+			   register_nav_menus( array(
+				   'MainMenu'  => 'منوی اصلی' ,
+				   'footer_arshita' => 'منوی فوتر ستون آرشیتا' ,
+				   'footer_quick_access' => 'منوی فوتر ستون دسترسی سریع' ,
+				   'footeraccount' => 'منوی فوتر ستون حساب کاربری' ,
+				   'footer_services' => 'منوی فوتر ستون خدمات مشتریان' ,
+
+			   ) );
+
+				};
+				add_action('after_setup_theme' , 'myThemeSetup');
+
 				function slider_post_type() {
 
 					register_post_type('slider_post_type',
@@ -86,7 +89,6 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 
 				
 				add_action('init', 'slider_post_type');
-add_action('after_setup_theme' , 'myThemeSetup');
 
 
 

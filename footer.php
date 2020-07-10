@@ -44,15 +44,18 @@
                 <div class="col-6 col-lg-3">
                     <div class="footer-ul">
                     <span class="footer-ul-header">آرشیتا کالا</span>
-                    <?php if( has_nav_menu('footer_arshia')) : ?>
+                    <?php if( has_nav_menu('footer_arshita')) : ?>
                       <?php
                     $config1 = array(
                         'container'       => 'ul',
-                        'menu_class'      => 'main-menu',
+                        'menu_class'      => 'footer-menu-1',
+                        'menu_id'         => 'footer-1',
                         'echo'            => true,
                         'fallback_cb'     => 'wp_page_menu',
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'depth'           => 0,
+                        'theme_location'  => 'footer_arshita',
+
                     );
                  wp_nav_menu($config1); ?>
         <?php else : ?>
@@ -67,11 +70,15 @@
                       <?php
                     $config2 = array(
                         'container'       => 'ul',
-                        'menu_class'      => 'main-menu',
+                        'menu_class'      => 'footer-menu-2',
+                        'menu_id'         => 'footer-2',
+
                         'echo'            => true,
                         'fallback_cb'     => 'wp_page_menu',
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'depth'           => 0,
+                        'theme_location'  => 'footeraccount',
+
                     );
                  wp_nav_menu($config2); ?>
         <?php else : ?>
@@ -86,8 +93,11 @@
                       <?php
                     $config3 = array(
                         'container'       => 'ul',
-                        'menu_class'      => 'main-menu',
+                        'menu_class'      => 'footer-menu-3',
                         'echo'            => true,
+                        'menu_id'         => 'footer-3',
+                        'theme_location'  => 'footer_quick_access',
+
                         'fallback_cb'     => 'wp_page_menu',
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                         'depth'           => 0,
@@ -105,7 +115,11 @@
                       <?php
                     $config4 = array(
                         'container'       => 'ul',
-                        'menu_class'      => 'main-menu',
+                        'menu_class'      => 'footer-menu-4',
+                        'theme_location'  => 'footer_services',
+
+                        'menu_id'         => 'footer-4',
+
                         'echo'            => true,
                         'fallback_cb'     => 'wp_page_menu',
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
