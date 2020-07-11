@@ -14,7 +14,7 @@
 .woocommerce-ordering{
     display: inline-block; 
 
-    width: 48%;
+    width: 40%;
     select{ 
         margin-right: auto;
         border: 1px solid #ddd;
@@ -24,6 +24,7 @@
         padding: 0 4px;
         font-family: 'shabnam' !important;
         color: #333;
+        max-width: 180px !important;
     }
 }
 .woocommerce-breadcrumb{

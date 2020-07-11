@@ -84,7 +84,7 @@
                                         <i class="mdi mdi-pen"></i>
 
                                          نویسنده :
-                                        <a href="<?php echo get_the_author_url( ) ?>"><?php the_author() ?></a>
+                                        <a href="<?php get_the_author_link(); ?>"><?php the_author() ?></a>
                                     </div>
                                     <div class="footer-row">
                                         <i class="mdi mdi-folder-open-outline"></i>

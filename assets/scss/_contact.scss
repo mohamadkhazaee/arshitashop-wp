@@ -1,0 +1,127 @@
+.contact-page{
+    .contact-page-header{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-family: 'shabnam' !important;
+        font-weight: bold;
+        font-size: 25px;
+        color: #333333; 
+    }
+    .contact-ways{
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            font-family: 'shabnam';
+            font-weight: bold;
+            font-size: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-way{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .contact-icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                i{
+                    color: $pred;
+                    font-size: 35px;
+                }
+            }
+            .contact-content{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 260px;
+                span{
+                    color: #333;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .contact-form{
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3{
+            font-family: 'shabnam';
+            font-weight: bold;
+            font-size: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .contact-map{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap !important;
+        margin: 20px 0;
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 10px;
+                color: $pred;
+            }
+            span{
+                color: #333;
+                font-family: 'shabnam';
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        iframe{
+            width: 100% !important;
+            max-height: 400px;
+            border-radius: $radius !important;
+        }
+    }
+}
+
+.about-page{
+    background-color: #fff;
+    padding: 15px;
+    font-family: 'shabnam';
+    color: #333;
+    display: flex;
+    border-radius: $radius;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    align-items: center;
+    img{
+        width: 250px;
+    }
+    p{
+        font-family: 'shabnam';
+    color: #333;
+    line-height: 28px;
+    }
+}
