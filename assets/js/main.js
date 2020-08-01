@@ -236,7 +236,8 @@ $('#back-top-btn').on('click', function (e) {
     }, 700);
 });
 
-})
+$('.product-overlay .woocommerce-LoopProduct-link').addClass('d-none')
 
+})
 
 

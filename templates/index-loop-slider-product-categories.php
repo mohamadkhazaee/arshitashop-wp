@@ -11,7 +11,7 @@
                             $loop_slider_categories = array(
                                 'taxonomy' => 'product_cat',
                                 'show_option_none' => '',
-                                'hide_empty' => false,
+                                'hide_empty' => true,
                                 'child_of' => 0,
                                 'depth' => 0,
                                 'parent' =>0

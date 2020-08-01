@@ -196,14 +196,14 @@
                                 width: 40px;
                                 border-radius: $radius;
                                 transform: translateX(-200%);
-                                height: 130px;
+                                height: 100px;
                                 top: 10px;
                                 left: 10px;
                                 background-color: rgba(0,0,0,.6);
                                 position: absolute;
                                 z-index: 101;
                                 display: flex;
-                                justify-content: center;
+                                justify-content: flex-start ;
                                 align-items: center;
                                 transition: all ease-in-out .3s;
                                 flex-direction: column;
@@ -390,6 +390,8 @@
                     height: 40px;
                     width: 100%;
                     display: flex;
+                    align-items: center;
+                    justify-content: space-around !important;
                     flex-direction: row;
                     transform: translateY(0) !important;
                     background-color: #fff !important;
@@ -560,7 +562,7 @@
                             width: 30px;
                             border-radius: $radius;
                             transform: translateX(-200%);
-                            height: 130px;
+                            height: 100px;
                             top: 10px;
                             left: 10px;
                             background-color: rgba(0,0,0,.6);

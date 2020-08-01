@@ -40,9 +40,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                                                         </a>
                                                         <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
                                                       
-                                                        <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
+                                                        <!-- <a data-toggle="tooltip" title="اضافه به لیست مقایسه" href="#">
                                                             <i class="mdi mdi-toggle-switch-outline"></i>
-                                                        </a>
+                                                        </a> -->
                                                     </div>
                                                 </div>
                                                 <a class="product-permalink" href="#">

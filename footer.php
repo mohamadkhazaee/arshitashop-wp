@@ -1,7 +1,7 @@
 <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12">
                     <div class="footer-social-media">
                     <?php $arshita_social_media=arshita_get_option('arshita_social_group'); ?>
                         <h5>شبکه های اجتماعی :</h5>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
+                <!-- <div class="col-12 col-md-6">
                     <div class="footer-social-media">
                         <h5>عضویت در خبرنامه سایت :</h5>
                         <form action="">
@@ -38,7 +38,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-6 col-lg-3">
